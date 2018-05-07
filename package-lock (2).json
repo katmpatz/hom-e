@@ -1,0 +1,16 @@
+{
+  "requires": true,
+  "lockfileVersion": 1,
+  "dependencies": {
+    "chosen-js": {
+      "version": "1.8.5",
+      "resolved": "https://registry.npmjs.org/chosen-js/-/chosen-js-1.8.5.tgz",
+      "integrity": "sha512-XkFqu0N5O5SbUWh/J4gcB7wOPBLMZbLibWryYmrCRfILUNQEIZwdoN8BZUkUoANmVa9aRs4mTSiDeRy4/eUWqg=="
+    },
+    "jquery": {
+      "version": "3.3.1",
+      "resolved": "https://registry.npmjs.org/jquery/-/jquery-3.3.1.tgz",
+      "integrity": "sha512-Ubldcmxp5np52/ENotGxlLe6aGMvmF4R8S6tZjsP6Knsaxd/xp3Zrh50cG93lR6nPXyUFwzN3ZSOQI0wRJNdGg=="
+    }
+  }
+}

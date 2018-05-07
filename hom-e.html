@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+
+
+    <title>Hom-e</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+
+    
+	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Lobster|Saira+Semi+Condensed" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"> 
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
+	
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="css/bootstrap-slider.min.css" rel="stylesheet">
+	<link href="css/chosen.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+	<script src="https://rawgit.com/rzajac/angularjs-slider/master/dist/rzslider.js"></script>
+	<link href="css/rzslider.css" rel="stylesheet"/>
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<link href="css/bootstrap-slider.min.css" rel="stylesheet">
+	<link href="css/chosen.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+	<script src="https://rawgit.com/rzajac/angularjs-slider/master/dist/rzslider.js"></script>
+	<link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet"/>
+	<link href="css/rzslider.css" rel="stylesheet"/>
+	
+	<style>
+		#slider1 .slider-selection {
+			background: #81bfde;
+		}
+	</style>
+	
+
+  </head>
+
+  <body id="page-top" ng-app="myapp">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top" id="title"><i class="fa fa-home" style="color:;"></i>Hom-e</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+		  <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">Πάροχοι</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Τι προσφέρουμε</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">Πώς λειτουργεί</a>
+            </li>
+            
+            
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" data-target="#login"><b>Είσοδος</b></button></a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" data-target="#register"><b>Εγγραφή</b></button></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+	
+	
+	
+    <!-- Header -->
+	
+	 <header class="masthead">
+        <div class="intro-text container">
+		<div class="intro-heading" style="color:#08001a; margin-top:300px; font-family: 'Comfortaa', cursive;">Βρες το σπίτι που σου ταιριάζει!</div>
+          <div class="banner-input" id=search>
+			<div class="container">
+				<form class="form-inline">
+					<div class="form-group col-lg-12 col-md-12 col-sm-12">
+						<label><b>Περιοχή:  </b></label>
+						
+							<select data-placeholder="Πληκτρολόγησε την περιοχή που επιθυμείς" multiple class="chosen-select" name="test" style="width: 100%;" >
+								<option value=""></option>
+								<optgroup label = "Αττική">
+								<option>Νομός Αττικής</option>
+		<option>Βόρεια & Ανατολικά Προάστια</option>
+		<option>Κέντρο Αθήνας</option>
+		<option>Κεντρικά & Δυτικά Προάστια</option>
+		<option>Κεντρικά & Νότια Προάστια</option>
+		<option>Πειραιάς</option>
+		<option>Υπόλοιπο Αττικής</option>
+		<option>Υπόλοιπο Πειραιά</option>
+	</optgroup>
+    <optgroup label = "Athens Center">
+    	<option>Κέντρο Αθήνας</option>
+		<option>Άγιος Ελευθέριος</option>
+		<option>Άγιος Κωνσταντίνος - Πλατεία Βάθης</option>
+		<option>Άνω Κυψέλη</option>
+		<option>Άνω Πατήσια</option>
+		<option>Α΄ Νεκροταφείο</option>
+		<option>Ακαδημία Πλάτωνος</option>
+		<option>Ακρόπολη</option>
+		<option>Αμπελόκηποι</option>
+ 		<option>Βοτανικός</option>
+		<option>Γκάζι</option>
+		<option>Γκύζη</option>
+		<option>Γουδή</option>
+		<option>Γούβα</option>
+		<option>Ελληνορώσων</option>
+		<option>Εμπορικό Τρίγωνο - Πλάκα</option>
+		<option>Ζάππειο</option>
+		<option>Θησείο</option>
+		<option>Ιλίσια</option>
+		<option>Κεραμεικός</option>
+		<option>Κολοκυνθού</option>
+		<option>Κολωνάκι</option>
+		<option>Κολωνός</option>
+		<option>Κουκάκι - Μακρυγιάννη</option>
+		<option>Κυψέλη</option>
+		<option>Λυκαβηττός</option>
+		<option>Μουσείο - Εξάρχεια - Νεάπολη</option>
+		<option>Νέα Κυψέλη</option>
+		<option>Νέος Κόσμος</option>
+		<option>Νιρβάνα</option>
+		<option>Παγκράτι</option>
+		<option>Πανεπιστημιούπολη</option>
+		<option>Πατήσια</option>
+		<option>Πεδίον Άρεως</option>
+		<option>Πεντάγωνο</option>
+		<option>Πετράλωνα</option>
+		<option>Πλατεία Αμερικής</option>
+		<option>Πλατεία Αττικής</option>
+		<option>Πολύγωνο</option>
+		<option>Προμπονά</option>
+		<option>Ρηγίλλης</option>
+		<option>Ριζούπολη</option>
+		<option>Ρουφ </option>
+		<option>Σεπόλια </option>
+		<option>Στάδιο </option>
+		<option>Σταθμός Λαρίσης</option>
+	</optgroup>
+	</optgroup>
+		<optgroup label = "Heraklion,Crete">
+		<option value="4">City Center</option>
+		<option value="5">Gazi</option>
+		<option value="6">Tsalikaki</option>
+	</optgroup>
+    
+							</select>
+					</div>
+		<div class="col-lg-12 text-center"><p></p></div>
+		
+		<div class="form-group col-lg-6 col-md-8 col-sm-12" ng-controller="TestController as vm">
+			<label><b>Τιμή:  </b></label>
+			<rzslider rz-slider-model="vm.priceSlider.minValue" rz-slider-high="vm.priceSlider.maxValue" rz-slider-options="vm.priceSlider.options"></rzslider>
+		</div>
+		<div class="form-group col-lg-6 col-md-8 col-sm-12" ng-controller="TestController as tm">
+			<label><b>Εμβαδον:  </b></label>
+			 <rzslider rz-slider-model="tm.embadonSlider.minValue" rz-slider-high="tm.embadonSlider.maxValue" rz-slider-options="tm.embadonSlider.options"></rzslider>
+		</div>
+		<br>
+		<div class="col-lg-12 text-center"><p></p></div>
+		<div class="col-lg-12 text-center">
+			<a href="" data-toggle="modal" data-target="#communication" style="color:white; font-size: 20px;"><i class="fa fa-filter" aria-hidden="false"> <b>Φίλτρα</b></i></a>
+		</div>
+		<div class="col-lg-12 text-center"><p></p></div>
+		<div class="col-lg-12 text-center">
+			<a href="homes.html" class="btn btn-primary btn-lg" role="button" style=" border-color: #7733ff; ;background-color: #7733ff;"><b>Αναζήτηση</b></a>
+		</div>
+	</form>
+	</div>
+	</div>
+         
+        </div>
+      </div>
+    </header>
+	
+	
+		<!-- Message-->
+	<div class="modal fade" id="communication" role="dialog">
+    <div class="modal-dialog modal-lg">
+	
+
+      <!-- Modal content-->
+      <div class="modal-content" >
+	  <div class="modal-heading">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<div class="form-signin-heading text-center">
+			<br>
+					<span class="fa-stack fa-3x">
+						<i class="fa fa-circle fa-stack-2x text-primary"></i>
+						<i class="fa fa-filter fa-stack-1x fa-inverse"></i>
+					</span>
+					<h4><small>Συμπλήρωσε τα κριτήτια που επιθυμείς και τη σπουδαιότητα που δίνεις στο καθένα.</small></h4>
+				</div>
+
+			<br>
+		</div>
+		
+        <div class="modal-body container-fluid" ng-controller="mainController">
+		<div class="container" >
+			<form>
+		<table class="table table-hover">
+			<tbody>
+				<tr>
+					<th scope="col"><label>Υπνοδωμάτια:  </label> </th>
+					<th scope="col"><input type="text" class="form-control" id="inputEmail4" placeholder="Από"></th>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr>
+					<td scope="row"><label>Σπουδαιότητα:  </label> </td>
+					<td colspan="2" class="form-group" ng-controller="TestController as bed">
+					<rzslider rz-slider-model="bed.bedroomSlider.value" rz-slider-options="bed.bedroomSlider.options"></rzslider></td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th scope="col"><label>Όροφος:  </label> </th>
+					<th scope="col"><input type="text" class="form-control" id="inputEmail4" placeholder="Από"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td colspan="2" class="form-group" ng-controller="TestController as fl">
+			<rzslider rz-slider-model="fl.importantSlider.value" rz-slider-options="fl.importantSlider.options"></rzslider></td>
+				</tr>
+			</tbody>
+		</table>
+			
+		</div>
+		<p></p>
+		<div class="form-row">
+			<div class="col-md-2">
+			<label>Όροφος:  </label>
+		</div>
+		<div class="col-md-2">
+			<input type="text" class="form-control" id="inputEmail4" placeholder="Από">
+		</div>
+		<div class="form-group col-md-6 offset-md-2" ng-controller="TestController as fl">
+			<rzslider rz-slider-model="fl.importantSlider.value" rz-slider-options="fl.importantSlider.options"></rzslider>
+		</div>
+			
+		</div>
+		<div class="form-row">
+			<div class="col-md-2">
+				<label>Κοντα σε Μέσα:</label>
+			</div>
+			<div class="custom-control custom-checkbox col-md-1">
+				<input type="checkbox" class="custom-control-input" id="customCheck1">
+				<label class="custom-control-label" for="customCheck1"></label>
+			</div>
+			<div class="form-group col-md-6 offset-md-3" ng-controller="TestController as metro">
+				<rzslider rz-slider-model="metro.importantSlider.value" rz-slider-options="metro.importantSlider.options"></rzslider>
+			</div>
+		</div>
+		
+		<div class="form-row">
+			<div class="col-md-2">
+				<label>Επιπλωμένο:  </label>
+			</div>
+			<div class="custom-control custom-checkbox col-md-1">
+				<input type="checkbox" class="custom-control-input" id="customCheck2">
+				<label class="custom-control-label" for="customCheck2"></label>
+			</div>
+			<div class="form-group col-md-6 offset-md-3" ng-controller="TestController as furn">
+				<rzslider rz-slider-model="furn.importantSlider.value" rz-slider-options="furn.importantSlider.options"></rzslider>
+			</div>
+		</div>
+			
+		<div class="form-row">
+			<div class="col-md-2">
+				<label>Κλιματισμός:  </label>
+			</div>
+			<div class="custom-control custom-checkbox col-md-1">
+				<input type="checkbox" class="custom-control-input" id="customCheck3">
+				<label class="custom-control-label" for="customCheck3"></label>
+			</div>
+			<div class="form-group col-md-6 offset-md-3" ng-controller="TestController as air">
+				<rzslider rz-slider-model="air.importantSlider.value" rz-slider-options="air.importantSlider.options"></rzslider>
+			</div>
+		</div>	
+			
+		<div class="form-row">
+			<div class="col-md-2">
+			<label>Αυτόνομη θέρμανση:  </label>
+		</div>
+		<div class="custom-control custom-checkbox col-md-1">
+				<input type="checkbox" class="custom-control-input" id="customCheck4">
+				<label class="custom-control-label" for="customCheck4"></label>
+			</div>
+			<div class="form-group col-md-6 offset-md-3" ng-controller="TestController as hot">
+				<rzslider rz-slider-model="hot.importantSlider.value" rz-slider-options="hot.importantSlider.options"></rzslider>
+			</div>
+		</div>	
+		
+		<div class="form-row">
+			<div class="col-md-2">
+			<label>Φυσικό αέριο:  </label>
+		</div>
+		<div class="custom-control custom-checkbox col-md-1">
+				<input type="checkbox" class="custom-control-input" id="customCheck5">
+				<label class="custom-control-label" for="customCheck5"></label>
+			</div>
+			<div class="form-group col-md-6 offset-md-3" ng-controller="TestController as nat">
+				<rzslider rz-slider-model="nat.importantSlider.value" rz-slider-options="nat.importantSlider.options"></rzslider>
+			</div>
+		</div>
+		
+		<div class="form-row">
+			<div class="col-md-2">
+			<label>Πάρκιν:  </label>
+		</div>
+		<div class="custom-control custom-checkbox col-md-1">
+				<input type="checkbox" class="custom-control-input" id="customCheck6">
+				<label class="custom-control-label" for="customCheck6"></label>
+			</div>
+			<div class="form-group col-md-6 offset-md-3" ng-controller="TestController as parking">
+				<rzslider rz-slider-model="parking.importantSlider.value" rz-slider-options="parking.importantSlider.options"></rzslider>
+			</div>
+		</div>
+		
+		<div class="form-row">
+			<div class="col-md-2">
+			<label>Αποθήκη:  </label>
+		</div>
+		<div class="custom-control custom-checkbox col-md-1">
+				<input type="checkbox" class="custom-control-input" id="customCheck7">
+				<label class="custom-control-label" for="customCheck7"></label>
+			</div>
+			<div class="form-group col-md-6 offset-md-3" ng-controller="TestController as warehouse">
+				<rzslider rz-slider-model="warehouse.importantSlider.value" rz-slider-options="warehouse.importantSlider.options"></rzslider>
+			</div>
+		</div>
+				
+				<hr>
+				<div class="text-center">
+					<button class="btn btn-info" data-dismiss="modal">Cancel</button>
+					<button class="btn btn-primary" type="submit" id="find" ng-disabled="form.$invalid" ng-click="myForm.submitTheForm()">Send</button>
+				</div>
+
+
+
+			</form>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+	
+   
+
+    <!-- Providers -->
+	    <section class="bg-light" id="providers">
+	      <div class="container">
+	        <div class="row">
+	          <div class="col-lg-12 text-center">
+	            <h3 class="section-subheading text-muted">Η Hom-e πραγματοποιεί αναζητήσεις με τους παρόχους σε όλα τα site που ανεβάζουν αγγελίες ενοικιάσεων ή πωλήσεων σπιτιών μεταξύ των οποίων είναι και οι παρακάτω.</h3>
+			  </div>
+
+	                  <div class="col-md-2">
+	                  	<img src="img/providers/xe.jpg" class="img-thumbnail">
+	                  </div>
+	                  <div class="col-md-2">
+	                  	<img src="img/providers/spitogatos.png" class="img-thumbnail">
+	                  </div>
+	                  <div class="col-md-2">
+	                  	<img src="img/providers/goldenhome.jpg" class="img-thumbnail">
+	                  </div>
+	                  <div class="col-md-2">
+	                  	<img src="img/providers/spiti24.png" class="img-thumbnail">
+	                  </div>
+	                  <div class="col-md-2">
+					  	<img src="img/providers/spiti360.png" class="img-thumbnail">
+	                  </div>
+	                  <div class="col-md-2">
+					  	<img src="img/providers/tospitimou.jpg" class="img-thumbnail">
+	                  </div>
+
+	         </div>
+	      </div>
+    </section>
+
+
+    <!-- Services -->
+    <section id="services" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Τι προσφερουμε</h2>
+			<br>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x" style="color:#00e6e6;"></i>
+              <i class="fa fa-search fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Αναζήτηση</h4>
+            <p class="text-muted">Συγκεντρώνονται όλες οι αγγελίες πώλησης ή ενοικίασης σπιτιών που είναι διαθέσιμες στο διαδίκτυο. Όλα τα αποτελέσματα σε μία μόνο αναζήτηση!</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x" style="color:#00e6e6;"></i>
+              <i class="fa fa-list-ul fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Σύγκριση</h4>
+            <p class="text-muted"> Οι αγγελίες που θα είναι σημαντικότερες για σένα θα εμφανιστούν πρώτες. Συμπλήρωσε τα κριτήρια που επιθυμείς και την σπουδιαίτητα τους!</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x" style="color:#00e6e6;"></i>
+              <i class="fa fa-bell fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Ειδοποίηση</h4>
+            <p class="text-muted">Σου έρχεται ειδοποίηση για κάθε νέα αγγελία που ταιριάζει με τα φίλτρα που έχεις ορίσει. Δημιούργησε λογαριασμό και αποθήκευσε τις αναζητήσεις σου!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+     <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">ΠΩΣ</h2>
+            <h3 class="section-subheading text-muted">...λειτουργεί..</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/magnifying-glass-3180075_12804444.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">1.Συμπλήρωσε την μηχανή αναζήτησης.</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted"> Επέλεξε ενοικίαση ή αγορά, σε ποιά/ποιές περιοχές και το εύρος της τιμής που επιθυμείς. Μπορείς ακόμη να επιλέξεις σύνθετη αναζήτηση και να συμπληρώσεις ορισμένα κριτήρια ανάλογα με τη σπουδαιότητα που έχουν για σένα.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/home-sweet-home-image.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">2. Βρες το σπίτι που σου αρέσει.</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted"> Πάτησε αναζήτηση και βρες το σπίτι που σου ταιριάζει με βάση τα φίλτρα που έχεις ορίσει. Επέλεξε αυτό που επιθυμείς και μεταφέρσου στην ιστοσελίδα που το προσφέρει.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/notification-home.png" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">3. Εάν διαθέτεις λογαριασμό...</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted"> Τι καλύτερο απ το να μην χρειάζεται συνεχώς να συμπληρώνεις τα ίδια κριτήρια! Με την δημιουργία λογαριασμού μπορείς να τα αποθηκεύσεις και να λαμβάνεις ειδοποίηση κάθε φορά που βρήσκουμε μια αγγελία που ταιριάζει στα κριτήριά σου.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/facebook-avatar.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">4. Πώς δημιουργώ λογαριασμό;</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Παιχνιδάκι. Το μόνο που χρειάζεται είναι να πατήσεις εγγραφή και να σημειώσεις ένα όνομα και ένα email. Τόσο απλό...</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <h4>Επιτέλους 
+                    <br>το σπίτι των
+                    <br>ονείρων σου!</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="bg-light" id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Discover the local buddy world!</h2>
+            <h3 class="section-subheading text-muted">Share your favorite spots, restaurants, cafes, bars, museums and avtivities with travelers.
+			Meet new cultures  and guide travelers to the unique sites of your city. Live the experience of a local buddy and become a part of our community.</h3>
+        
+                  <div id="success"></div>
+                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit"><b>Become localbuddy</b></button>
+                </div>
+				</div>
+      </div>
+    </section>
+
+
+    
+
+    <!-- Footer -->
+    <footer style="background:#14141F;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <span class="copyright" style="color:white;">Copyright &copy; Localbuddy 2017</span>
+          </div>
+          
+          
+        </div>
+      </div>
+    </footer>
+
+   
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+	<script src="js/bootstrap-slider.min.js"></script>
+	<script src="js/chosen.jquery.min.js"></script>
+	<script src="js/chosen.proto.min.js"></script>
+	
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+	<script src="js/bootstrap-slider.min.js"></script>
+	<script src="js/chosen.jquery.min.js"></script>
+	<script src="js/chosen.proto.min.js"></script>
+	<script>
+		$("#ex2a").slider({ id: 'slider1'});
+		$("#ex2b").slider({ id: 'slider1'});
+		
+		
+	</script>
+	
+	<script>
+		
+		$(".chosen-select").chosen({
+  no_results_text: "Oops, nothing found!"
+})
+	</script>
+	
+	<script>
+		var myApp = angular.module('myapp', ['rzModule']);
+
+myApp.controller('TestController', TestController);
+
+function TestController() {
+    var vm = this;
+	var tm = this;
+	var bed = this;
+	var fl = this;
+	var metro = this;
+	var furn = this;
+	var air = this;
+	var hot = this;
+	var nat = this;
+	var parking = this;
+	var warehouse = this;
+
+    vm.priceSlider = {
+        minValue: 200,
+        maxValue: 300,
+        options: {
+            floor: 0,
+            ceil: 500,
+        }
+    }
+	
+	tm.embadonSlider = {
+        minValue: 200,
+        maxValue: 300,
+        options: {
+            floor: 0,
+            ceil: 500,
+        }
+    }
+	
+	bed.bedroomSlider = {
+		 value: 0,
+    options: {
+		floor: 0,
+        ceil: 5,
+        showSelectionBar: true
+    }
+	}
+	
+	fl.importantSlider = {
+		 value: 0,
+    options: {
+		floor: 0,
+        ceil: 5,
+        showSelectionBar: true
+    }
+	}
+	
+	metro.importantSlider = {
+		 value: 0,
+    options: {
+		floor: 0,
+        ceil: 5,
+        showSelectionBar: true
+    }
+	}
+	
+	furn.importantSlider = {
+		 value: 0,
+    options: {
+		floor: 0,
+        ceil: 5,
+        showSelectionBar: true
+    }
+	}
+	
+	air.importantSlider = {
+		 value: 0,
+    options: {
+		floor: 0,
+        ceil: 5,
+        showSelectionBar: true
+    }
+	}
+	
+	hot.importantSlider = {
+		 value: 0,
+    options: {
+		floor: 0,
+        ceil: 5,
+        showSelectionBar: true
+    }
+	}
+	
+	nat.importantSlider = {
+		 value: 0,
+    options: {
+		floor: 0,
+        ceil: 5,
+        showSelectionBar: true
+    }
+	}
+	
+	parking.importantSlider = {
+		 value: 0,
+    options: {
+		floor: 0,
+        ceil: 5,
+        showSelectionBar: true
+    }
+	}
+	
+	warehouse.importantSlider = {
+		 value: 0,
+    options: {
+		floor: 0,
+        ceil: 5,
+        showSelectionBar: true
+    }
+	}
+}
+	</script>
+	
+	<script>
+		$('.your-checkbox').prop('indeterminate', true)
+	</script>
+	
+
+  </body>
+
+</html>
