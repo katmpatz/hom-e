@@ -1,0 +1,19 @@
+body{
+  .content{
+    a{
+      color: gray;
+      text-decoration: none !important;
+      .fa fa-2x{
+        transition: all .5s;
+        &.fa-heart{
+          color: #e74c3c;
+        }
+        &.fa-heart-o{
+          &:hover{
+            transform:scale(1.1);
+          }
+        }
+      }     
+    }
+  }
+}

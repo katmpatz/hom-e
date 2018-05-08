@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Button Fun</title>
+        <style>
+            button {
+                background-color: blue;
+                height: 100px;
+                width: 150px;
+            }
+
+            button.pressed {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <button>Press</button>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+        <script>
+            $(() => {
+                'use strict';
+                $('button').click(function() {
+                    $(this).toggleClass('pressed');
+                });
+            });
+        </script>
+    </body>
+</html>

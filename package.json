@@ -31,7 +31,10 @@
       "url": "https://github.com/koenpunt"
     }
   ],
-  "dependencies": {},
+  "dependencies": {
+    "lesshat": "^4.1.0",
+    "npm": "^6.0.0"
+  },
   "files": [
     "chosen.jquery.js",
     "chosen.jquery.min.js",

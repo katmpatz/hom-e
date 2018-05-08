@@ -11,7 +11,30 @@
     <title>Hom-e</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+   	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link href="css/chosen.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+	<script src="https://rawgit.com/rzajac/angularjs-slider/master/dist/rzslider.js"></script>
+	<link href="css/rzslider.css" rel="stylesheet"/>
+	<link href="css/chosen.min.css" rel="stylesheet">
+
+
+	
+	<script src="https://rawgit.com/rzajac/angularjs-slider/master/dist/rzslider.js"></script>
+	<link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet"/>
+	<link href="css/rzslider.css" rel="stylesheet"/>
+	
+	
+
+	
+	
+	   
+ 
+		<link href="css/favourite.css" rel="stylesheet"/>
 
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -21,11 +44,16 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Lobster|Saira+Semi+Condensed" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"> 
 
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
+	<link href="css/favourite.css" rel="stylesheet"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+	
 
   </head>
+  
 
   <body id="page-top">
 
@@ -61,16 +89,120 @@
       </div>
     </nav>
 	
+	
+	
+	
+
+	
 
 	
     <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio">
+    <section class="bg-light" id="portfolio" ng-app="CombineModule">
       <div class="container">
-		<div class="col-lg-12 col-lg-3" style="margin-top: 55px;">
-			<a href="index.html" class="btn btn-primary btn-lg" role="button" id="find"><i class="fa fa-arrow-left" aria-hidden="true"></i><b> Back</b></a>
-		<br>
-		<br>
+	  <br>
+	  <br>
+	  <br>
+		
+		
+			
+	<div class="banner-input" id=search>
+			<div class="container">
+				<form class="form-inline">
+					<div class="form-group col-lg-12 col-md-12 col-sm-12">
+						<label><b>Περιοχή:  </b></label>
+						
+							<select data-placeholder="Πληκτρολόγησε την περιοχή που επιθυμείς" multiple class="chosen-select" name="test" style="width: 100%;" >
+								<option value=""></option>
+								<optgroup label = "Αττική">
+								<option>Νομός Αττικής</option>
+		<option>Βόρεια & Ανατολικά Προάστια</option>
+		<option>Κέντρο Αθήνας</option>
+		<option>Κεντρικά & Δυτικά Προάστια</option>
+		<option>Κεντρικά & Νότια Προάστια</option>
+		<option>Πειραιάς</option>
+		<option>Υπόλοιπο Αττικής</option>
+		<option>Υπόλοιπο Πειραιά</option>
+	</optgroup>
+    <optgroup label = "Athens Center">
+    	<option>Κέντρο Αθήνας</option>
+		<option>Άγιος Ελευθέριος</option>
+		<option>Άγιος Κωνσταντίνος - Πλατεία Βάθης</option>
+		<option>Άνω Κυψέλη</option>
+		<option>Άνω Πατήσια</option>
+		<option>Α΄ Νεκροταφείο</option>
+		<option>Ακαδημία Πλάτωνος</option>
+		<option>Ακρόπολη</option>
+		<option>Αμπελόκηποι</option>
+ 		<option>Βοτανικός</option>
+		<option>Γκάζι</option>
+		<option>Γκύζη</option>
+		<option>Γουδή</option>
+		<option>Γούβα</option>
+		<option>Ελληνορώσων</option>
+		<option>Εμπορικό Τρίγωνο - Πλάκα</option>
+		<option>Ζάππειο</option>
+		<option>Θησείο</option>
+		<option>Ιλίσια</option>
+		<option>Κεραμεικός</option>
+		<option>Κολοκυνθού</option>
+		<option>Κολωνάκι</option>
+		<option>Κολωνός</option>
+		<option>Κουκάκι - Μακρυγιάννη</option>
+		<option>Κυψέλη</option>
+		<option>Λυκαβηττός</option>
+		<option>Μουσείο - Εξάρχεια - Νεάπολη</option>
+		<option>Νέα Κυψέλη</option>
+		<option>Νέος Κόσμος</option>
+		<option>Νιρβάνα</option>
+		<option>Παγκράτι</option>
+		<option>Πανεπιστημιούπολη</option>
+		<option>Πατήσια</option>
+		<option>Πεδίον Άρεως</option>
+		<option>Πεντάγωνο</option>
+		<option>Πετράλωνα</option>
+		<option>Πλατεία Αμερικής</option>
+		<option>Πλατεία Αττικής</option>
+		<option>Πολύγωνο</option>
+		<option>Προμπονά</option>
+		<option>Ρηγίλλης</option>
+		<option>Ριζούπολη</option>
+		<option>Ρουφ </option>
+		<option>Σεπόλια </option>
+		<option>Στάδιο </option>
+		<option>Σταθμός Λαρίσης</option>
+	</optgroup>
+	</optgroup>
+		<optgroup label = "Heraklion,Crete">
+		<option value="4">City Center</option>
+		<option value="5">Gazi</option>
+		<option value="6">Tsalikaki</option>
+	</optgroup>
+    
+							</select>
+					</div>
+		<div class="col-lg-12 text-center"><p></p></div>
+		
+		<div class="form-group col-lg-6 col-md-8 col-sm-12" ng-controller="TestController as vm">
+			<label><b>Τιμή:  </b></label>
+			<rzslider rz-slider-model="vm.priceSlider.minValue" rz-slider-high="vm.priceSlider.maxValue" rz-slider-options="vm.priceSlider.options"></rzslider>
 		</div>
+		<div class="form-group col-lg-6 col-md-8 col-sm-12" ng-controller="TestController as tm">
+			<label><b>Εμβαδον:  </b></label>
+			 <rzslider rz-slider-model="tm.embadonSlider.minValue" rz-slider-high="tm.embadonSlider.maxValue" rz-slider-options="tm.embadonSlider.options"></rzslider>
+		</div>
+		<br>
+	
+	</form>
+	
+	</div>	
+	</div>
+		  <br>
+	  <br>
+	  <br>
+		
+		
+		
+		
         <div class="row">
           <div class="col-lg-12 text-center">
             <h4 class="section-heading">Βρες το σπίτι που σου ταιριάζει!</h2>
@@ -99,7 +231,15 @@
               <h4>Πετράλωνα<small>  30/04/2018</small></h4>
               <p class="text-muted">Τιμή: 350$</p>
 			  <p class="text-muted">Εμβαδόν: 80τμ</p>
+			  <div class="content"  ng-controller="Main">
+					<a href="#" ng-click="doVote()">
+					<i class="fa fa-2x" ng-class="(like.userVotes==1) ? 'fa-heart' : 'fa-heart-o'" style="color: red; font-size:40px;"></i>
+					<span ng-model="like.votes"></span>
+					</a>
+				</div>
+			  
             </div>
+			
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" href="profil2.html">
@@ -116,12 +256,18 @@
 				<span><img src="img/providers/xe.jpg" class="img-thumbnail" style="width:100px; height:100px;"><span>
 				</div>
               </div>
-              <img class="img-fluid" src="img/129178259_300x220.jpg" alt="" id="photo">
+              <img class="img-fluid" src="img/enoik2.jpg" alt="" id="photo">
             </a>
             <div class="portfolio-caption">
               <h4>Θησείο<small>  27/04/2018</small></h4>
               <p class="text-muted">Τιμή: 450$</p>
 			  <p class="text-muted">Εμβαδόν: 60τμ</p>
+			  <div class="content"  ng-controller="Main">
+					<a href="#" ng-click="doVote()">
+					<i class="fa fa-2x" ng-class="(like.userVotes==1) ? 'fa-heart' : 'fa-heart-o'" style="color: red; font-size:40px;"></i>
+					<span ng-model="like.votes"></span>
+					</a>
+				</div>
             </div>
           </div>
                     <div class="col-md-4 col-sm-6 portfolio-item">
@@ -142,9 +288,15 @@
               <img class="img-fluid" src="img/polykatoikies.jpg" alt="" id="photo">
             </a>
             <div class="portfolio-caption">
-              <h4>Κάτω Πετράλωνα<small>  01/05/2018</small></h4>
+              <h4>Αμπελόκηποι<small>  01/05/2018</small></h4>
               <p class="text-muted">Τιμή: 380$</p>
 			  <p class="text-muted">Εμβαδόν: 75τμ</p>
+			  <div class="content"  ng-controller="Main">
+					<a href="#" ng-click="doVote()">
+					<i class="fa fa-2x" ng-class="(like.userVotes==1) ? 'fa-heart' : 'fa-heart-o'" style="color: red; font-size:40px;"></i>
+					<span ng-model="like.votes"></span>
+					</a>
+				</div>
             </div>
           </div>
                     <div class="col-md-4 col-sm-6 portfolio-item">
@@ -167,6 +319,12 @@
               <h4>Παγκράτι<small>  28/04/2018</small></h4>
               <p class="text-muted">Τιμή: 290$</p>
 			  <p class="text-muted">Εμβαδόν: 48τμ</p>
+			  <div class="content"  ng-controller="Main">
+					<a href="#" ng-click="doVote()">
+					<i class="fa fa-2x" ng-class="(like.userVotes==1) ? 'fa-heart' : 'fa-heart-o'" style="color: red; font-size:40px;"></i>
+					<span ng-model="like.votes"></span>
+					</a>
+				</div>
             </div>
           </div>
                     <div class="col-md-4 col-sm-6 portfolio-item">
@@ -184,12 +342,18 @@
 				<span><img src="img/providers/spiti24.png" class="img-thumbnail" style="width:100px; height:100px;"><span>
 				</div>
               </div>
-              <img class="img-fluid" src="img/enoik2.jpg" alt="" id="photo">
+              <img class="img-fluid" src="img/129178259_300x220.jpg" alt="" id="photo">
             </a>
             <div class="portfolio-caption">
               <h4>Πετράλωνα<small>  25/04/2018</small></h4>
               <p class="text-muted">Τιμή: 380$</p>
 			  <p class="text-muted">Εμβαδόν: 78τμ</p>
+			  <div class="content"  ng-controller="Main">
+					<a href="#" ng-click="doVote()">
+					<i class="fa fa-2x" ng-class="(like.userVotes==1) ? 'fa-heart' : 'fa-heart-o'" style="color: red; font-size:40px;"></i>
+					<span ng-model="like.votes"></span>
+					</a>
+				</div>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -212,13 +376,19 @@
               <h4>Παγκράτι<small>  01/05/2018</small></h4>
               <p class="text-muted">Τιμή: 390$</p>
 			  <p class="text-muted">Εμβαδόν: 87τμ</p>
+			  	<div class="content"  ng-controller="Main">
+					<a href="#" ng-click="doVote()">
+					<i class="fa fa-2x" ng-class="(like.userVotes==1) ? 'fa-heart' : 'fa-heart-o'" style="color: red; font-size:40px;"></i>
+					<span ng-model="like.votes"></span>
+					</a>
+				</div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
- 
+
     
 
     
@@ -253,6 +423,153 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
+	
+		<script src="js/chosen.jquery.min.js"></script>
+	<script src="js/chosen.proto.min.js"></script>
+	
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    
+	<script src="js/chosen.jquery.min.js"></script>
+	<script src="js/chosen.proto.min.js"></script>
+
+	<script src="js/favourite.js"></script>
+	
+	<script>
+		
+		$(".chosen-select").chosen({
+  no_results_text: "Oops, nothing found!"
+})
+	</script>
+	
+	<script>
+		var myApp = angular.module('myapp', ['rzModule']);
+
+myApp.controller('TestController', TestController);
+
+function TestController() {
+    var vm = this;
+	var tm = this;
+	var bed = this;
+	var fl = this;
+	var metro = this;
+	var furn = this;
+	var air = this;
+	var hot = this;
+	var nat = this;
+	var parking = this;
+	var warehouse = this;
+
+    vm.priceSlider = {
+        minValue: 200,
+        maxValue: 300,
+        options: {
+            floor: 0,
+            ceil: 500,
+        }
+    }
+	
+	tm.embadonSlider = {
+        minValue: 200,
+        maxValue: 300,
+        options: {
+            floor: 0,
+            ceil: 500,
+        }
+    }
+	
+	bed.bedroomSlider = {
+		 value: 0,
+    options: {
+		floor: 0,
+        ceil: 5,
+        showSelectionBar: true
+    }
+	}
+	
+	fl.importantSlider = {
+		 value: 0,
+    options: {
+		floor: 0,
+        ceil: 5,
+        showSelectionBar: true
+    }
+	}
+	
+	metro.importantSlider = {
+		 value: 0,
+    options: {
+		floor: 0,
+        ceil: 5,
+        showSelectionBar: true
+    }
+	}
+	
+	furn.importantSlider = {
+		 value: 0,
+    options: {
+		floor: 0,
+        ceil: 5,
+        showSelectionBar: true
+    }
+	}
+	
+	air.importantSlider = {
+		 value: 0,
+    options: {
+		floor: 0,
+        ceil: 5,
+        showSelectionBar: true
+    }
+	}
+	
+	hot.importantSlider = {
+		 value: 0,
+    options: {
+		floor: 0,
+        ceil: 5,
+        showSelectionBar: true
+    }
+	}
+	
+	nat.importantSlider = {
+		 value: 0,
+    options: {
+		floor: 0,
+        ceil: 5,
+        showSelectionBar: true
+    }
+	}
+	
+	parking.importantSlider = {
+		 value: 0,
+    options: {
+		floor: 0,
+        ceil: 5,
+        showSelectionBar: true
+    }
+	}
+	
+	warehouse.importantSlider = {
+		 value: 0,
+    options: {
+		floor: 0,
+        ceil: 5,
+        showSelectionBar: true
+    }
+	}
+}
+	</script>
+	
+	<script>
+		$('.your-checkbox').prop('indeterminate', true)
+	</script>
+	
+	<script>
+		angular.module("CombineModule", ["myapp", "fav"]);
+	</script>
+	
+	
 
   </body>
 

@@ -296,6 +296,8 @@ header.masthead .intro-text .intro-heading {
 	margin-top: 0px;
 	font-family: 'Comfortaa', cursive;
 	color: white;
+	border: 2px solid rgb(209, 190, 255, 0.5);
+    border-radius: 10px;
 
 
 }
