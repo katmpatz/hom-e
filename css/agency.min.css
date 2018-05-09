@@ -259,7 +259,7 @@ header.masthead {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-	min-height: 580px;
+	min-height: 850px;
 
 }
 header.masthead .intro-text {
@@ -291,12 +291,12 @@ header.masthead .intro-text .intro-heading {
     }
 }
 #search{
-	background: rgb(209, 190, 255, 0.5);
+	background: rgb(209, 190, 255);
 	padding:1em 0;
 	margin-top: 0px;
 	font-family: 'Comfortaa', cursive;
 	color: white;
-	border: 2px solid rgb(209, 190, 255, 0.5);
+	border: 2px solid rgb(209, 190, 255);
     border-radius: 10px;
 
 
