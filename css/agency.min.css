@@ -183,7 +183,7 @@ body {
     -webkit-tap-highlight-color: #00e6e6
 }
 #mainNav {
-    background-color: #6b7a8f;
+    background-color: #14141f;
 }
 #mainNav .navbar-toggler {
     font-size: 12px;
@@ -555,6 +555,69 @@ header.masthead .intro-text .intro-heading {
     .timeline>li.timeline-inverted>.timeline-panel {
         padding: 0 100px 20px 20px
     }
+}
+
+.team-member{
+    margin-bottom:50px;
+    text-align:center
+}
+.team-member img{
+    width:225px;
+    height:225px;
+    border:7px solid #fff
+}
+.team-member h4{
+    margin-top:25px;
+    margin-bottom:0;
+    text-transform:none
+}
+.team-member p{
+    margin-top:0
+}
+section#contact{
+    background-color:#212529;
+    background-image:url(../img/map-image.png);
+    background-repeat:no-repeat;
+    background-position:center
+}
+section#contact .section-heading{
+    color:#fff
+}
+section#contact .form-group{
+    margin-bottom:25px
+}
+section#contact .form-group input,section#contact .form-group textarea{
+    padding:20px
+}
+section#contact .form-group input.form-control{
+    height:auto
+}
+section#contact .form-group textarea.form-control{
+    height:248px
+}
+section#contact .form-control:focus{
+    border-color:#fed136;
+    box-shadow:none
+}
+section#contact ::-webkit-input-placeholder{
+    font-weight:700;
+    color:#ced4da;
+    font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif
+}
+section#contact :-moz-placeholder{
+    font-weight:700;
+    color:#ced4da;
+    font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif
+}
+section#contact ::-moz-placeholder{
+    font-weight:700;
+    color:#ced4da;
+    font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif
+}
+section#contact :-ms-input-placeholder{
+    font-weight:700;
+    color:#ced4da;
+    font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif
 }
 
 footer {

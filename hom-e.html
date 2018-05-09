@@ -43,6 +43,26 @@
 	<link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet"/>
 	<link href="css/rzslider.css" rel="stylesheet"/>
 	
+	
+	
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<link href="css/chosen.min.css" rel="stylesheet">
+	<script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+	<script src="https://rawgit.com/rzajac/angularjs-slider/master/dist/rzslider.js"></script>
+	<link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet"/>
+	<link href="css/rzslider.css" rel="stylesheet"/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	
+	
+	
+	
+	
+	
 
   </head>
 
@@ -91,6 +111,10 @@
 			<div class="container">
 				<form class="form-inline">
 					<div class="form-group col-lg-12 col-md-12 col-sm-12">
+					
+					
+					
+					
 						<label><b>Περιοχή:  </b></label>
 						
 							<select data-placeholder="Πληκτρολόγησε την περιοχή που επιθυμείς" multiple class="chosen-select" name="test" style="width: 100%;" >
@@ -178,7 +202,9 @@
 			<a href="" data-toggle="modal" data-target="#communication" style="color:white; font-size: 20px;"><i class="fa fa-filter" aria-hidden="false"> <b>Φίλτρα</b></i></a>
 		</div>
 		<div class="col-lg-12 text-center"><p></p></div>
+		
 		<div class="col-lg-12 text-center">
+		
 
 			<a href="homes.html" class="btn btn-primary btn-lg" role="button" style=" border-color: #f7c331;background-color: #f7c331;"><b>Αναζήτηση</b></a>
 			
@@ -199,7 +225,7 @@
 
       <!-- Modal content-->
 
-      <div class="modal-content" style="background: #e0ebeb;">
+      <div class="modal-content" style="background: white;">
 
 	  <div class="modal-heading">
 			<button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -383,12 +409,13 @@
   </div>
   </div>
   </div>
+  </div>
  
 	
    
 
     <!-- Providers -->
-	    <section class="bg-light" id="providers">
+	    <section id="providers">
 	      <div class="container">
 	        <div class="row">
 	          <div class="col-lg-12 text-center">
@@ -534,21 +561,9 @@
       </div>
     </section>
 
-    <!-- Team -->
-    <section class="bg-light" id="team">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Discover the local buddy world!</h2>
-            <h3 class="section-subheading text-muted">Share your favorite spots, restaurants, cafes, bars, museums and avtivities with travelers.
-			Meet new cultures  and guide travelers to the unique sites of your city. Live the experience of a local buddy and become a part of our community.</h3>
-        
-                  <div id="success"></div>
-                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit"><b>Become localbuddy</b></button>
-                </div>
-				</div>
-      </div>
-    </section>
+
+
+   
 
 
     
@@ -579,6 +594,9 @@
     <script src="js/contact_me.js"></script>
 
     <!-- Custom scripts for this template -->
+	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	
     <script src="js/agency.min.js"></script>
 	<script src="js/chosen.jquery.min.js"></script>
 	<script src="js/chosen.proto.min.js"></script>
@@ -595,6 +613,10 @@
 		$(".chosen-select").chosen({
   no_results_text: "Oops, nothing found!"
 })
+	</script>
+	
+		<script>
+		$('.your-checkbox').prop('indeterminate', true)
 	</script>
 	
 	<script>
@@ -716,9 +738,7 @@ function TestController() {
 }
 	</script>
 	
-	<script>
-		$('.your-checkbox').prop('indeterminate', true)
-	</script>
+
 	
 
   </body>
