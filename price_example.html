@@ -44,8 +44,6 @@
 
 	
 	
-
-<!--
 	<div class="container" ng-app="myapp">
     <div ng-controller="TestController as vm">
         <p>Price: {{vm.priceSlider.value}}</p>
@@ -59,7 +57,7 @@
     </div>
 	
 	<br>
-	<form>
+	<form class="form-group">
 		<div class="container">
 			<div class="row">
 				<div class="col"><label>Υπνοδωμάτια:  </label></div>
@@ -176,7 +174,7 @@
 				<rzslider rz-slider-model="warehouse.importantSlider.value" rz-slider-options="warehouse.importantSlider.options"></rzslider>
 			</div>
 		</div>
-	</form>-->
+	</form>
 	
 	
 	
@@ -185,16 +183,6 @@
 	
 	
 	
-	
-
-  <div class="content" ng-app="myApp" ng-controller="Main">
-    <a href="#" ng-click="doVote()">
-      <i class="fa fa-2x" ng-class="(like.userVotes==1) ? 'fa-heart' : 'fa-heart-o'" style="color: red; font-size:40px;"></i>
-      <span ng-model="like.votes"></span>
-    </a>
-  </div>
-
-
 
         
         
@@ -208,14 +196,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
-
 	<script src="js/chosen.jquery.min.js"></script>
 	<script src="js/chosen.proto.min.js"></script>
-	<script src="js/favourite.js"></script>
+
 	
 	
 
-	<!-- 
+
 	<script>
 		var myApp = angular.module('myapp', ['rzModule']);
 
@@ -338,7 +325,6 @@ function TestController() {
 	<script>
 		$('.your-checkbox').prop('indeterminate', true)
 	</script>
-	-->
 	
 	
 	
