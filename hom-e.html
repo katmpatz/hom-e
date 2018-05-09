@@ -12,10 +12,12 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+	
 
     <!-- Custom fonts for this template -->
-
-    
+	
+	    
 	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
@@ -23,6 +25,8 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Lobster|Saira+Semi+Condensed" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"> 
+	
+	
 
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
@@ -43,9 +47,9 @@
 	<link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet"/>
 	<link href="css/rzslider.css" rel="stylesheet"/>
 	
-	
-	
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
 	<link href="css/chosen.min.css" rel="stylesheet">
 	<script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
@@ -57,12 +61,6 @@
 
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-	
-	
-	
-	
-	
-	
 
   </head>
 
@@ -243,7 +241,53 @@
 		
         <div class="modal-body container-fluid">
 		<div class="container" >
-			<form >
+			<form class="form-inline" action="/action_page.php">
+    <div class="form-group"><label class = "col-md-2">Υπνοδωμάτια:  </label> 
+					<input type="text" class="form-control col-md-2 offset-md-2" id="inputEmail4" placeholder="Από">
+					<input type="text" class="form-control col-md-2" id="inputEmail4" placeholder="Έως">
+					</div>
+  </form>
+  <form class="form-inline" action="/action_page.php">
+					<label class="form-group">Σπουδαιότητα:  </label>					
+					<div class="form-group col-md-8 offset-md-1" ng-controller="TestController as bed">
+					<rzslider rz-slider-model="bed.bedroomSlider.value" rz-slider-options="bed.bedroomSlider.options"></rzslider>
+					</div>
+  </form>
+  <form class="form-inline" action="/action_page.php">
+    <div class="form-group"><label class = "col-md-2">Όροφος:  </label> 
+					<input type="text" class="form-control col-md-2 offset-md-2" id="inputEmail4" placeholder="Από">
+					<input type="text" class="form-control col-md-2" id="inputEmail4" placeholder="Έως">
+					</div>
+  </form>
+  <form class="form-inline" action="/action_page.php">
+					<label class="form-group">Σπουδαιότητα:  </label>					
+					<div class="form-group col-md-8 offset-md-1" ng-controller="TestController as fl">
+			<rzslider rz-slider-model="fl.importantSlider.value" rz-slider-options="fl.importantSlider.options"></rzslider>
+					</div>
+  </form>
+   <form class="form-inline" action="/action_page.php">
+					<div class="form-group"><label class = "col-md-3">Κοντα σε Μέσα:</label>
+					</div>
+					<div class="custom-control custom-checkbox" >
+					    <input type="checkbox" class="custom-control-input" id="customCheck1" >
+				        <label class="custom-control-label" for="customCheck1"></label>
+					</div>
+  </form>
+   <form class="form-inline" action="/action_page.php">
+					<label class="form-group">Σπουδαιότητα:  </label>					
+					<div class="form-group col-md-8 offset-md-1"  ng-controller="TestController as metro">
+				<rzslider rz-slider-model="metro.importantSlider.value" rz-slider-options="metro.importantSlider.options"></rzslider>
+					</div>
+  </form>
+     <form class="form-inline" action="/action_page.php">
+					<div class="form-group"><label class = "col-md-3">Επιπλωμένο:</label>
+					</div>
+					<div class="custom-control custom-checkbox" >
+					    <input type="checkbox" class="custom-control-input" id="customCheck2" >
+				        <label class="custom-control-label" for="customCheck2"></label>
+					</div>
+  </form>
+		<form>	
 		<table class="table table-hover">
 			<thead>
 				<tr>
@@ -581,7 +625,7 @@
       </div>
     </footer>
 
-   
+	
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -592,6 +636,9 @@
     <!-- Contact form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 
     <!-- Custom scripts for this template -->
 	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -601,11 +648,18 @@
 	<script src="js/chosen.jquery.min.js"></script>
 	<script src="js/chosen.proto.min.js"></script>
 	
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     
 	<script src="js/chosen.jquery.min.js"></script>
 	<script src="js/chosen.proto.min.js"></script>
+	
+	 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+
+	<script src="js/chosen.jquery.min.js"></script>
+	<script src="js/chosen.proto.min.js"></script>
+	<script src="js/favourite.js"></script>
 
 	
 	<script>
