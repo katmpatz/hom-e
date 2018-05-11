@@ -89,7 +89,7 @@
             </li>
 
 			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="login.html"><b>Είσοδος/Εγγραφή</b></button></a>
+              <a class="nav-link js-scroll-trigger" href="login.html"><b>Είσοδος</b></button></a>
             </li>
           </ul>
         </div>
@@ -106,27 +106,27 @@
           <div class="banner-input" id=search style="margin-top:100px;">
 			<div class="container" >
 				<form class="form-inline">
+				<div class="form-group col-lg-12 col-md-12 col-sm-12">
+					<label for="student" class="radio-inline text-center">
+					<input type="radio" name="student" ng-model="localForm.student" value="available" ><b> Ενοικίαση </b>
+				</label>
+				<label for="student" class="radio-inline offset-md-1">
+					<input type="radio" name="student" ng-model="localForm.student" value="not available" ><b> Αγορά</b>
+				</label><br>
+				</div>
+				</form>
+				<div class="col-lg-12 text-center"><p></p></div>
+				<form class="form-inline">
 					<div class="form-group col-lg-12 col-md-12 col-sm-12" style="width:100%">
-
 
 
 
 						<label><b>Περιοχή:  </b></label>
 
 							<select data-placeholder="Πληκτρολόγησε την περιοχή που επιθυμείς" multiple class="chosen-select" name="test" style="width: 100%;">
-								<option value=""></option>
-								<optgroup label = "Αττική">
-								<option>Νομός Αττικής</option>
-		<option>Βόρεια & Ανατολικά Προάστια</option>
-		<option>Κέντρο Αθήνας</option>
-		<option>Κεντρικά & Δυτικά Προάστια</option>
-		<option>Κεντρικά & Νότια Προάστια</option>
-		<option>Πειραιάς</option>
-		<option>Υπόλοιπο Αττικής</option>
-		<option>Υπόλοιπο Πειραιά</option>
-	</optgroup>
-    <optgroup label = "Athens Center">
-    	<option>Κέντρο Αθήνας</option>
+				
+    <optgroup label = "Κέντρο Αθήνας">
+    	
 		<option>Άγιος Ελευθέριος</option>
 		<option>Άγιος Κωνσταντίνος - Πλατεία Βάθης</option>
 		<option>Άνω Κυψέλη</option>
@@ -173,12 +173,7 @@
 		<option>Στάδιο </option>
 		<option>Σταθμός Λαρίσης</option>
 	</optgroup>
-	</optgroup>
-		<optgroup label = "Heraklion,Crete">
-		<option value="4">City Center</option>
-		<option value="5">Gazi</option>
-		<option value="6">Tsalikaki</option>
-	</optgroup>
+
 
 							</select>
 					</div>
@@ -197,7 +192,7 @@
 		<div class="col-lg-12 text-center">
 			<a href="" data-toggle="modal" data-target="#communication"><i class="fa fa-filter" aria-hidden="false" style="color:#056571;"> <b style="color:#414141; font-size: 20px;">Φίλτρα</b></i></a>
 		</div>
-		<div class="col-lg-12 text-center"><p></p></div>
+
 
 		<div class="col-lg-12 text-center">
 
@@ -268,10 +263,7 @@
    <form class="form-inline">
 					<div class="form-group"><label class = "col-md-12">Κοντα σε Μέσα:</label>
 					</div>
-					<div class="custom-control custom-checkbox" >
-					    <input type="checkbox" class="custom-control-input" id="customCheck1">
-				        <label class="custom-control-label" for="customCheck1" ></label>
-					</div>
+					
   </form>
    <form class="form-inline">
 					<div class="form-group col-md-8 offset-md-1"  ng-controller="TestController as metro">
@@ -282,10 +274,7 @@
    <form class="form-inline">
 					<div class="form-group"><label class = "col-md-12">Επιπλωμένο:</label>
 					</div>
-					<div class="custom-control custom-checkbox" >
-					    <input type="checkbox" class="custom-control-input" id="customCheck2" >
-				        <label class="custom-control-label" for="customCheck2"></label>
-					</div>
+					
   </form>
      <form class="form-inline">
 					<div class="form-group col-md-8 offset-md-1" ng-controller="TestController as furn">
@@ -296,10 +285,7 @@
    <form class="form-inline">
 					<div class="form-group"><label class = "col-md-12">Κλιματισμός:</label>
 					</div>
-					<div class="custom-control custom-checkbox" >
-					    <input type="checkbox" class="custom-control-input" id="customCheck3" >
-				        <label class="custom-control-label" for="customCheck3"></label>
-					</div>
+					
   </form>
        <form class="form-inline">
 					<div class="form-group col-md-8 offset-md-1"  ng-controller="TestController as air">
@@ -310,10 +296,7 @@
      <form class="form-inline">
 					<div class="form-group"><label class = "col-md-12">Αυτόνομη θέρμανση:</label>
 					</div>
-					<div class="custom-control custom-checkbox" >
-					<input type="checkbox" class="custom-control-input" id="customCheck4" >
-				<label class="custom-control-label" for="customCheck4"></label>
-					</div>
+					
   </form>
        <form class="form-inline">
 					<div class="form-group col-md-8 offset-md-1"  ng-controller="TestController as hot">
@@ -324,10 +307,7 @@
      <form class="form-inline">
 					<div class="form-group"><label class = "col-md-12">Φυσικό αέριο:</label>
 					</div>
-					<div class="custom-control custom-checkbox" >
-					<input type="checkbox" class="custom-control-input" id="customCheck5" >
-				<label class="custom-control-label" for="customCheck5"></label>
-					</div>
+					
   </form>
        <form class="form-inline">
 					<div class="form-group col-md-8 offset-md-1" ng-controller="TestController as nat">
@@ -338,10 +318,7 @@
      <form class="form-inline">
 					<div class="form-group"><label class = "col-md-12">Πάρκιν:</label>
 					</div>
-					<div class="custom-control custom-checkbox" >
-					<input type="checkbox" class="custom-control-input" id="customCheck6" >
-				<label class="custom-control-label" for="customCheck6"></label>
-					</div>
+				
   </form>
        <form class="form-inline">
 					<div class="form-group col-md-8 offset-md-1" ng-controller="TestController as parking">
@@ -352,10 +329,7 @@
      <form class="form-inline">
 					<div class="form-group"><label class = "col-md-12">Αποθήκη:</label>
 					</div>
-					<div class="custom-control custom-checkbox" >
-					<input type="checkbox" class="custom-control-input" id="customCheck7" >
-				<label class="custom-control-label" for="customCheck7"></label>
-					</div>
+					
   </form>
        <form class="form-inline">
 					<div class="form-group col-md-8 offset-md-1" ng-controller="TestController as warehouse">

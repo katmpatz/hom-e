@@ -43,9 +43,7 @@
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
 	<link href="css/favourite.css" rel="stylesheet"/>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
-
-
+	
   </head>
 
 
@@ -73,15 +71,15 @@
 
 
 			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" data-target="#login"><b>Είσοδος</b></button></a>
+              <a class="nav-link js-scroll-trigger" href="login.html"><b>Είσοδος</b></button></a>
             </li>
-			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" data-target="#register"><b>Εγγραφή</b></button></a>
-            </li>
+
           </ul>
         </div>
       </div>
     </nav>
+	
+	
 
 
 
@@ -91,11 +89,10 @@
 
 
     <!-- Portfolio Grid -->
-	<div ng-app="CombineModule">
-    <section class="bg-light" id="portfolio">
-      <div class="container">
-	  <br>
-	  <div ng-controller="ShowController">
+	<div class="bg-light" ng-app="CombineModule">
+	 <br> <br> <br> <br>
+	<div ng-controller="ShowController">
+	<div class="container bg-light">
 	  <div>
         <button ng-click="myFunc()" class="btn btn-primary btn-md"> <i class="fa fa-filter" aria-hidden="false"> <b style="font-size: 20px;">Φίλτρα</b></i> </button>
       </div>
@@ -103,78 +100,81 @@
 	  <div ng-show="showMe">
 	  <div class="banner-input" id=search style="margin-top:60px;">
 			<div class="container" >
+			<form class="form-inline">
+				<div class="form-group col-lg-12 col-md-12 col-sm-12">
+					<label for="student" class="radio-inline text-center">
+					<input type="radio" name="student" ng-model="localForm.student" value="available" ><b> Ενοικίαση </b>
+				</label>
+				<label for="student" class="radio-inline offset-md-1">
+					<input type="radio" name="student" ng-model="localForm.student" value="not available" ><b> Αγορά</b>
+				</label><br>
+				</div>
+				</form>
+				<div class="col-lg-12 text-center"><p></p></div>
 				<form class="form-inline">
-					<div class="form-group col-lg-12 col-md-12 col-sm-12">
+					<div class="form-group col-lg-12 col-md-12 col-sm-12" style="width:100%">
+
+
+
+
 						<label><b>Περιοχή:  </b></label>
 
-							<select data-placeholder="Πληκτρολόγησε την περιοχή που επιθυμείς" multiple class="chosen-select" name="test" style="width: 100%;"  >
-								<option value=""></option>
-								<optgroup label = "Αττική">
-								<option>Νομός Αττικής</option>
-								<option>Βόρεια & Ανατολικά Προάστια</option>
-								<option>Κέντρο Αθήνας</option>
-								<option>Κεντρικά & Δυτικά Προάστια</option>
-								<option>Κεντρικά & Νότια Προάστια</option>
-								<option>Πειραιάς</option>
-								<option>Υπόλοιπο Αττικής</option>
-								<option>Υπόλοιπο Πειραιά</option>
-								</optgroup>
-   							    <optgroup label = "Athens Center">
-    							<option>Κέντρο Αθήνας</option>
-								<option>Άγιος Ελευθέριος</option>
-								<option>Άγιος Κωνσταντίνος - Πλατεία Βάθης</option>
-		    					<option>Άνω Κυψέλη</option>
-								<option>Άνω Πατήσια</option>
-								<option>Α΄ Νεκροταφείο</option>
-								<option>Ακαδημία Πλάτωνος</option>
-								<option>Ακρόπολη</option>
-								<option>Αμπελόκηποι</option>
- 								<option>Βοτανικός</option>
-								<option>Γκάζι</option>
-								<option>Γκύζη</option>
-								<option>Γουδή</option>
-								<option>Γούβα</option>
-								<option>Ελληνορώσων</option>
-								<option>Εμπορικό Τρίγωνο - Πλάκα</option>
-								<option>Ζάππειο</option>
-								<option>Θησείο</option>
-								<option>Ιλίσια</option>
-								<option>Κεραμεικός</option>
-								<option>Κολοκυνθού</option>
-								<option>Κολωνάκι</option>
-								<option>Κολωνός</option>
-								<option>Κουκάκι - Μακρυγιάννη</option>
-								<option>Κυψέλη</option>
-								<option>Λυκαβηττός</option>
-								<option>Μουσείο - Εξάρχεια - Νεάπολη</option>
-								<option>Νέα Κυψέλη</option>
-								<option>Νέος Κόσμος</option>
-								<option>Νιρβάνα</option>
-								<option>Παγκράτι</option>
-								<option>Πανεπιστημιούπολη</option>
-								<option>Πατήσια</option>
-								<option>Πεδίον Άρεως</option>
-								<option>Πεντάγωνο</option>
-								<option>Πετράλωνα</option>
-								<option>Πλατεία Αμερικής</option>
-								<option>Πλατεία Αττικής</option>
-								<option>Πολύγωνο</option>
-								<option>Προμπονά</option>
-								<option>Ρηγίλλης</option>
-								<option>Ριζούπολη</option>
-								<option>Ρουφ </option>
-								<option>Σεπόλια </option>
-								<option>Στάδιο </option>
-								<option>Σταθμός Λαρίσης</option>
-							</optgroup>
+							<select data-placeholder="Πληκτρολόγησε την περιοχή που επιθυμείς" multiple class="chosen-select" name="test" style="width: 100%;">
+								<optgroup label = "Κέντρο Αθήνας">
+    	
+		<option>Άγιος Ελευθέριος</option>
+		<option>Άγιος Κωνσταντίνος - Πλατεία Βάθης</option>
+		<option>Άνω Κυψέλη</option>
+		<option>Άνω Πατήσια</option>
+		<option>Α΄ Νεκροταφείο</option>
+		<option>Ακαδημία Πλάτωνος</option>
+		<option>Ακρόπολη</option>
+		<option>Αμπελόκηποι</option>
+ 		<option>Βοτανικός</option>
+		<option>Γκάζι</option>
+		<option>Γκύζη</option>
+		<option>Γουδή</option>
+		<option>Γούβα</option>
+		<option>Ελληνορώσων</option>
+		<option>Εμπορικό Τρίγωνο - Πλάκα</option>
+		<option>Ζάππειο</option>
+		<option>Θησείο</option>
+		<option>Ιλίσια</option>
+		<option>Κεραμεικός</option>
+		<option>Κολοκυνθού</option>
+		<option>Κολωνάκι</option>
+		<option>Κολωνός</option>
+		<option>Κουκάκι - Μακρυγιάννη</option>
+		<option>Κυψέλη</option>
+		<option>Λυκαβηττός</option>
+		<option>Μουσείο - Εξάρχεια - Νεάπολη</option>
+		<option>Νέα Κυψέλη</option>
+		<option>Νέος Κόσμος</option>
+		<option>Νιρβάνα</option>
+		<option>Παγκράτι</option>
+		<option>Πανεπιστημιούπολη</option>
+		<option>Πατήσια</option>
+		<option>Πεδίον Άρεως</option>
+		<option>Πεντάγωνο</option>
+		<option>Πετράλωνα</option>
+		<option>Πλατεία Αμερικής</option>
+		<option>Πλατεία Αττικής</option>
+		<option>Πολύγωνο</option>
+		<option>Προμπονά</option>
+		<option>Ρηγίλλης</option>
+		<option>Ριζούπολη</option>
+		<option>Ρουφ </option>
+		<option>Σεπόλια </option>
+		<option>Στάδιο </option>
+		<option>Σταθμός Λαρίσης</option>
+	</optgroup>
 
-
-
-						</select>
+							</select>
 					</div>
 
+
 		<div class="col-lg-12 text-center"><p></p></div>
-		<form class="form-inline">
+
 		<div class="form-group col-lg-6 col-md-8 col-sm-12" ng-controller="TestController as vm">
 			<label><b>Τιμή:  </b></label>
 			<rzslider rz-slider-model="vm.priceSlider.minValue" rz-slider-high="vm.priceSlider.maxValue" rz-slider-options="vm.priceSlider.options"></rzslider>
@@ -198,15 +198,13 @@
 	</div>
 	</div>
 	</div>
+	</div>
 
-
-
-
-
-
-
-
-
+	
+	
+    <section class="bg-light" id="portfolio">
+      <div class="container">
+	 
         <div class="row" style="margin-top:70px;">
           <div class="col-lg-12 text-center">
             <h4 class="section-heading">Βρες το σπίτι που σου ταιριάζει!</h2>
@@ -466,10 +464,7 @@
    <form class="form-inline">
 					<div class="form-group"><label class = "col-md-12">Κοντα σε Μέσα:</label>
 					</div>
-					<div class="custom-control custom-checkbox" >
-					    <input type="checkbox" class="custom-control-input" id="customCheck1">
-				        <label class="custom-control-label" for="customCheck1" ></label>
-					</div>
+					
   </form>
    <form class="form-inline">
 					<div class="form-group col-md-8 offset-md-1"  ng-controller="TestController as metro">
@@ -480,10 +475,7 @@
    <form class="form-inline">
 					<div class="form-group"><label class = "col-md-12">Επιπλωμένο:</label>
 					</div>
-					<div class="custom-control custom-checkbox" >
-					    <input type="checkbox" class="custom-control-input" id="customCheck2" >
-				        <label class="custom-control-label" for="customCheck2"></label>
-					</div>
+					
   </form>
      <form class="form-inline">
 					<div class="form-group col-md-8 offset-md-1" ng-controller="TestController as furn">
@@ -494,10 +486,7 @@
    <form class="form-inline">
 					<div class="form-group"><label class = "col-md-12">Κλιματισμός:</label>
 					</div>
-					<div class="custom-control custom-checkbox" >
-					    <input type="checkbox" class="custom-control-input" id="customCheck3" >
-				        <label class="custom-control-label" for="customCheck3"></label>
-					</div>
+					
   </form>
        <form class="form-inline">
 					<div class="form-group col-md-8 offset-md-1"  ng-controller="TestController as air">
@@ -508,10 +497,7 @@
      <form class="form-inline">
 					<div class="form-group"><label class = "col-md-12">Αυτόνομη θέρμανση:</label>
 					</div>
-					<div class="custom-control custom-checkbox" >
-					<input type="checkbox" class="custom-control-input" id="customCheck4" >
-				<label class="custom-control-label" for="customCheck4"></label>
-					</div>
+					
   </form>
        <form class="form-inline">
 					<div class="form-group col-md-8 offset-md-1"  ng-controller="TestController as hot">
@@ -522,10 +508,7 @@
      <form class="form-inline">
 					<div class="form-group"><label class = "col-md-12">Φυσικό αέριο:</label>
 					</div>
-					<div class="custom-control custom-checkbox" >
-					<input type="checkbox" class="custom-control-input" id="customCheck5" >
-				<label class="custom-control-label" for="customCheck5"></label>
-					</div>
+					
   </form>
        <form class="form-inline">
 					<div class="form-group col-md-8 offset-md-1" ng-controller="TestController as nat">
@@ -536,10 +519,7 @@
      <form class="form-inline">
 					<div class="form-group"><label class = "col-md-12">Πάρκιν:</label>
 					</div>
-					<div class="custom-control custom-checkbox" >
-					<input type="checkbox" class="custom-control-input" id="customCheck6" >
-				<label class="custom-control-label" for="customCheck6"></label>
-					</div>
+					
   </form>
        <form class="form-inline">
 					<div class="form-group col-md-8 offset-md-1" ng-controller="TestController as parking">
@@ -550,10 +530,7 @@
      <form class="form-inline">
 					<div class="form-group"><label class = "col-md-12">Αποθήκη:</label>
 					</div>
-					<div class="custom-control custom-checkbox" >
-					<input type="checkbox" class="custom-control-input" id="customCheck7" >
-				<label class="custom-control-label" for="customCheck7"></label>
-					</div>
+					
   </form>
        <form class="form-inline">
 					<div class="form-group col-md-8 offset-md-1" ng-controller="TestController as warehouse">
@@ -605,7 +582,7 @@
 	 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+
 
 	<script src="js/chosen.jquery.min.js"></script>
 	<script src="js/chosen.proto.min.js"></script>
