@@ -27,12 +27,6 @@
 	<script src="https://rawgit.com/rzajac/angularjs-slider/master/dist/rzslider.js"></script>
 	<link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet"/>
 	<link href="css/rzslider.css" rel="stylesheet"/>
-	
-	
-
-	
-	
-	   
  
 		<link href="css/favourite.css" rel="stylesheet"/>
 
@@ -49,7 +43,7 @@
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
 	<link href="css/favourite.css" rel="stylesheet"/>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 	
 
   </head>
@@ -97,27 +91,23 @@
 
 	
     <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio" ng-app="CombineModule">
+	<div ng-app="CombineModule">
+    <section class="bg-light" id="portfolio">
       <div class="container">
 	  <br>
-	  <br>
-	  <br>
 	  <div ng-controller="ShowController">
-		<div>
-			<button ng-click="myFunc()" class="btn btn-primary btn-md"><i class="fa fa-filter" aria-hidden="false"> <b>Φίλτρα</b></i></button>
-		</div>
-		
-		
-	<div ng-show="showMe">	
-<br>
-<br>	
-	<div class="banner-input" id=search>
-			<div class="container">
+	  <div>
+        <button ng-click="myFunc()" class="btn btn-primary btn-md"> <i class="fa fa-filter" aria-hidden="false"> <b style="font-size: 20px;">Φίλτρα</b></i> </button>
+      </div>
+	
+	  <div ng-show="showMe">
+	  <div class="banner-input" id=search style="margin-top:60px;">
+			<div class="container" >
 				<form class="form-inline">
 					<div class="form-group col-lg-12 col-md-12 col-sm-12">
 						<label><b>Περιοχή:  </b></label>
 						
-							<select data-placeholder="Πληκτρολόγησε την περιοχή που επιθυμείς" multiple class="chosen-select" name="test" style="width: 100%;" >
+							<select data-placeholder="Πληκτρολόγησε την περιοχή που επιθυμείς" multiple class="chosen-select" name="test" style="width: 100%;"  >
 								<option value=""></option>
 								<optgroup label = "Αττική">
 								<option>Νομός Αττικής</option>
@@ -177,17 +167,14 @@
 		<option>Στάδιο </option>
 		<option>Σταθμός Λαρίσης</option>
 	</optgroup>
-	</optgroup>
-		<optgroup label = "Heraklion,Crete">
-		<option value="4">City Center</option>
-		<option value="5">Gazi</option>
-		<option value="6">Tsalikaki</option>
-	</optgroup>
+
+
     
-							</select>
-					</div>
+		</select>
+		</div>
+		</form>
 		<div class="col-lg-12 text-center"><p></p></div>
-		
+		<form class="form-inline">
 		<div class="form-group col-lg-6 col-md-8 col-sm-12" ng-controller="TestController as vm">
 			<label><b>Τιμή:  </b></label>
 			<rzslider rz-slider-model="vm.priceSlider.minValue" rz-slider-high="vm.priceSlider.maxValue" rz-slider-options="vm.priceSlider.options"></rzslider>
@@ -197,180 +184,23 @@
 			 <rzslider rz-slider-model="tm.embadonSlider.minValue" rz-slider-high="tm.embadonSlider.maxValue" rz-slider-options="tm.embadonSlider.options"></rzslider>
 		</div>
 		<br>
+		<div class="col-lg-12 text-center"><p></p></div>
 		<div class="col-lg-12 text-center">
 			<a href="" data-toggle="modal" data-target="#communication"><i class="fa fa-filter" aria-hidden="false" style="color:#056571;"> <b style="color:#414141; font-size: 20px;">Περισσότερα</b></i></a>
 		</div>
 		<div class="col-lg-12 text-center"><p></p></div>
 		
 		<div class="col-lg-12 text-center">
-		
-
 			<a href="homes.html" class="btn btn-primary btn-lg" role="button" style=" border-color: #056571;background-color: #056571;"><b>Ανανέωση</b></a>
-			
 		</div>
 	</form>
 	</div>
 	</div>
-    </div> 
-        
-      
-    </header>
+	</div>
+	</div>
 	
 	
-		<!-- Message-->
-	<div class="modal fade" id="communication" role="dialog">
-    <div class="modal-dialog modal-lg">
 	
-
-      <!-- Modal content-->
-
-      <div class="modal-content" style="background: #ccdfcb;">
-
-	  <div class="modal-heading">
-			<button type="button" class="close" data-dismiss="modal">&times;</button>
-			<div class="form-signin-heading text-center container" style="background:#056571; min-height:200px;">
-			<br>
-					<span class="fa-stack fa-3x">
-						<i class="fa fa-circle fa-stack-2x" style="color:#ff6a5c;"></i>
-						<i class="fa fa-filter fa-stack-1x fa-inverse"></i>
-					</span>
-					<p></p>
-					<h6 class="text-center" style="color:white; text-size:15px;"><i style="color:white; text-size:15px;">Συμπλήρωσε τα κριτήτια που επιθυμείς και σημείωσε πόσο σημαντικό είναι για σένα κάθε κριτήριο.</i></h6>
-					<h6 class="text-center" style="color:white;"><i>Έτσι, οι αγγελίες που σου ταιριάζουν περισσότερο θα εμφανίζονται πρώτες.</i></h6>
-				</div>
-
-			<br>
-		</div>
-		
-        <div class="modal-body container-fluid">
-		<div class="container" >
-			<form class="form-inline" action="/action_page.php">
-    <div class="form-group"><label class = "col-md-2">Υπνοδωμάτια:  </label> 
-					<input type="text" class="form-control col-md-2 offset-md-2" id="inputEmail4" placeholder="Από">
-					<input type="text" class="form-control col-md-2" id="inputEmail4" placeholder="Έως">
-					</div>
-  </form>
-  <form class="form-inline" action="/action_page.php">
-					<div class="form-group col-md-8 offset-md-1" ng-controller="TestController as bed">
-					<rzslider rz-slider-model="bed.bedroomSlider.value" rz-slider-options="bed.bedroomSlider.options"></rzslider>
-					</div>
-  </form>
-  <br>
-  <form class="form-inline" action="/action_page.php">
-    <div class="form-group"><label class = "col-md-2">Όροφος:  </label> 
-					<input type="text" class="form-control col-md-2 offset-md-2" id="inputEmail4" placeholder="Από">
-					<input type="text" class="form-control col-md-2" id="inputEmail4" placeholder="Έως">
-					</div>
-  </form>
-  <form class="form-inline">				
-					<div class="form-group col-md-8 offset-md-1" ng-controller="TestController as fl">
-			<rzslider rz-slider-model="fl.floorSlider.value" rz-slider-options="fl.floorSlider.options"></rzslider>
-					</div>
-  </form>
-  <br>
-   <form class="form-inline">
-					<div class="form-group"><label class = "col-md-12">Κοντα σε Μέσα:</label>
-					</div>
-					<div class="custom-control custom-checkbox" >
-					    <input type="checkbox" class="custom-control-input" id="customCheck1">
-				        <label class="custom-control-label" for="customCheck1" ></label>
-					</div>
-  </form>
-   <form class="form-inline">				
-					<div class="form-group col-md-8 offset-md-1"  ng-controller="TestController as metro">
-				<rzslider rz-slider-model="metro.metroSlider.value" rz-slider-options="metro.metroSlider.options"></rzslider>
-					</div>
-  </form>
-  <br>
-   <form class="form-inline">
-					<div class="form-group"><label class = "col-md-12">Επιπλωμένο:</label>
-					</div>
-					<div class="custom-control custom-checkbox" >
-					    <input type="checkbox" class="custom-control-input" id="customCheck2" >
-				        <label class="custom-control-label" for="customCheck2"></label>
-					</div>
-  </form>
-     <form class="form-inline">				
-					<div class="form-group col-md-8 offset-md-1" ng-controller="TestController as furn">
-				<rzslider rz-slider-model="furn.furnitureSlider.value" rz-slider-options="furn.furnitureSlider.options"></rzslider>
-					</div>
-  </form>
-  <br>
-   <form class="form-inline">
-					<div class="form-group"><label class = "col-md-12">Κλιματισμός:</label>
-					</div>
-					<div class="custom-control custom-checkbox" >
-					    <input type="checkbox" class="custom-control-input" id="customCheck3" >
-				        <label class="custom-control-label" for="customCheck3"></label>
-					</div>
-  </form>
-       <form class="form-inline">				
-					<div class="form-group col-md-8 offset-md-1"  ng-controller="TestController as air">
-				<rzslider rz-slider-model="air.airSlider.value" rz-slider-options="air.airSlider.options"></rzslider>
-					</div>
-  </form>
-  <br>
-     <form class="form-inline">
-					<div class="form-group"><label class = "col-md-12">Αυτόνομη θέρμανση:</label>
-					</div>
-					<div class="custom-control custom-checkbox" >
-					<input type="checkbox" class="custom-control-input" id="customCheck4" >
-				<label class="custom-control-label" for="customCheck4"></label>
-					</div>
-  </form>
-       <form class="form-inline">				
-					<div class="form-group col-md-8 offset-md-1"  ng-controller="TestController as hot">
-				<rzslider rz-slider-model="hot.hotSlider.value" rz-slider-options="hot.hotSlider.options"></rzslider>
-					</div>
-  </form>
-    <br>
-     <form class="form-inline">
-					<div class="form-group"><label class = "col-md-12">Φυσικό αέριο:</label>
-					</div>
-					<div class="custom-control custom-checkbox" >
-					<input type="checkbox" class="custom-control-input" id="customCheck5" >
-				<label class="custom-control-label" for="customCheck5"></label>
-					</div>
-  </form>
-       <form class="form-inline">				
-					<div class="form-group col-md-8 offset-md-1" ng-controller="TestController as nat">
-				<rzslider rz-slider-model="nat.natSlider.value" rz-slider-options="nat.natSlider.options"></rzslider>
-					</div>
-  </form>
-      <br>
-     <form class="form-inline">
-					<div class="form-group"><label class = "col-md-12">Πάρκιν:</label>
-					</div>
-					<div class="custom-control custom-checkbox" >
-					<input type="checkbox" class="custom-control-input" id="customCheck6" >
-				<label class="custom-control-label" for="customCheck6"></label>
-					</div>
-  </form>
-       <form class="form-inline">				
-					<div class="form-group col-md-8 offset-md-1" ng-controller="TestController as parking">
-				<rzslider rz-slider-model="parking.parkingSlider.value" rz-slider-options="parking.parkingSlider.options"></rzslider>
-					</div>
-  </form>
-        <br>
-     <form class="form-inline">
-					<div class="form-group"><label class = "col-md-12">Αποθήκη:</label>
-					</div>
-					<div class="custom-control custom-checkbox" >
-					<input type="checkbox" class="custom-control-input" id="customCheck7" >
-				<label class="custom-control-label" for="customCheck7"></label>
-					</div>
-  </form>
-       <form class="form-inline">				
-					<div class="form-group col-md-8 offset-md-1" ng-controller="TestController as warehouse">
-				<rzslider rz-slider-model="warehouse.warehouseSlider.value" rz-slider-options="warehouse.warehouseSlider.options"></rzslider>
-					</div>
-  </form>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
  
 	  
 		
@@ -579,6 +409,172 @@
         </div>
       </div>
     </footer>
+	
+	
+	
+	<!-- Message-->
+	<div class="modal fade" id="communication" role="dialog">
+    <div class="modal-dialog modal-lg">
+	
+
+      <!-- Modal content-->
+
+      <div class="modal-content" style="background: #ccdfcb;">
+
+	  <div class="modal-heading">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<div class="form-signin-heading text-center container" style="background:#056571; min-height:200px;">
+			<br>
+					<span class="fa-stack fa-3x">
+						<i class="fa fa-circle fa-stack-2x" style="color:#ff6a5c;"></i>
+						<i class="fa fa-filter fa-stack-1x fa-inverse"></i>
+					</span>
+					<p></p>
+					<h6 class="text-center" style="color:white; text-size:15px;"><i style="color:white; text-size:15px;">Συμπλήρωσε τα κριτήτια που επιθυμείς και σημείωσε πόσο σημαντικό είναι για σένα κάθε κριτήριο.</i></h6>
+					<h6 class="text-center" style="color:white;"><i>Έτσι, οι αγγελίες που σου ταιριάζουν περισσότερο θα εμφανίζονται πρώτες.</i></h6>
+				</div>
+
+			<br>
+		</div>
+		
+        <div class="modal-body container-fluid">
+		<div class="container" >
+			<form class="form-inline" action="/action_page.php">
+    <div class="form-group"><label class = "col-md-2">Υπνοδωμάτια:  </label> 
+					<input type="text" class="form-control col-md-2 offset-md-2" id="inputEmail4" placeholder="Από">
+					<input type="text" class="form-control col-md-2" id="inputEmail4" placeholder="Έως">
+					</div>
+  </form>
+  <form class="form-inline" action="/action_page.php">
+					<div class="form-group col-md-8 offset-md-1" ng-controller="TestController as bed">
+					<rzslider rz-slider-model="bed.bedroomSlider.value" rz-slider-options="bed.bedroomSlider.options"></rzslider>
+					</div>
+  </form>
+  <br>
+  <form class="form-inline" action="/action_page.php">
+    <div class="form-group"><label class = "col-md-2">Όροφος:  </label> 
+					<input type="text" class="form-control col-md-2 offset-md-2" id="inputEmail4" placeholder="Από">
+					<input type="text" class="form-control col-md-2" id="inputEmail4" placeholder="Έως">
+					</div>
+  </form>
+  <form class="form-inline">				
+					<div class="form-group col-md-8 offset-md-1" ng-controller="TestController as fl">
+			<rzslider rz-slider-model="fl.floorSlider.value" rz-slider-options="fl.floorSlider.options"></rzslider>
+					</div>
+  </form>
+  <br>
+   <form class="form-inline">
+					<div class="form-group"><label class = "col-md-12">Κοντα σε Μέσα:</label>
+					</div>
+					<div class="custom-control custom-checkbox" >
+					    <input type="checkbox" class="custom-control-input" id="customCheck1">
+				        <label class="custom-control-label" for="customCheck1" ></label>
+					</div>
+  </form>
+   <form class="form-inline">				
+					<div class="form-group col-md-8 offset-md-1"  ng-controller="TestController as metro">
+				<rzslider rz-slider-model="metro.metroSlider.value" rz-slider-options="metro.metroSlider.options"></rzslider>
+					</div>
+  </form>
+  <br>
+   <form class="form-inline">
+					<div class="form-group"><label class = "col-md-12">Επιπλωμένο:</label>
+					</div>
+					<div class="custom-control custom-checkbox" >
+					    <input type="checkbox" class="custom-control-input" id="customCheck2" >
+				        <label class="custom-control-label" for="customCheck2"></label>
+					</div>
+  </form>
+     <form class="form-inline">				
+					<div class="form-group col-md-8 offset-md-1" ng-controller="TestController as furn">
+				<rzslider rz-slider-model="furn.furnitureSlider.value" rz-slider-options="furn.furnitureSlider.options"></rzslider>
+					</div>
+  </form>
+  <br>
+   <form class="form-inline">
+					<div class="form-group"><label class = "col-md-12">Κλιματισμός:</label>
+					</div>
+					<div class="custom-control custom-checkbox" >
+					    <input type="checkbox" class="custom-control-input" id="customCheck3" >
+				        <label class="custom-control-label" for="customCheck3"></label>
+					</div>
+  </form>
+       <form class="form-inline">				
+					<div class="form-group col-md-8 offset-md-1"  ng-controller="TestController as air">
+				<rzslider rz-slider-model="air.airSlider.value" rz-slider-options="air.airSlider.options"></rzslider>
+					</div>
+  </form>
+  <br>
+     <form class="form-inline">
+					<div class="form-group"><label class = "col-md-12">Αυτόνομη θέρμανση:</label>
+					</div>
+					<div class="custom-control custom-checkbox" >
+					<input type="checkbox" class="custom-control-input" id="customCheck4" >
+				<label class="custom-control-label" for="customCheck4"></label>
+					</div>
+  </form>
+       <form class="form-inline">				
+					<div class="form-group col-md-8 offset-md-1"  ng-controller="TestController as hot">
+				<rzslider rz-slider-model="hot.hotSlider.value" rz-slider-options="hot.hotSlider.options"></rzslider>
+					</div>
+  </form>
+    <br>
+     <form class="form-inline">
+					<div class="form-group"><label class = "col-md-12">Φυσικό αέριο:</label>
+					</div>
+					<div class="custom-control custom-checkbox" >
+					<input type="checkbox" class="custom-control-input" id="customCheck5" >
+				<label class="custom-control-label" for="customCheck5"></label>
+					</div>
+  </form>
+       <form class="form-inline">				
+					<div class="form-group col-md-8 offset-md-1" ng-controller="TestController as nat">
+				<rzslider rz-slider-model="nat.natSlider.value" rz-slider-options="nat.natSlider.options"></rzslider>
+					</div>
+  </form>
+      <br>
+     <form class="form-inline">
+					<div class="form-group"><label class = "col-md-12">Πάρκιν:</label>
+					</div>
+					<div class="custom-control custom-checkbox" >
+					<input type="checkbox" class="custom-control-input" id="customCheck6" >
+				<label class="custom-control-label" for="customCheck6"></label>
+					</div>
+  </form>
+       <form class="form-inline">				
+					<div class="form-group col-md-8 offset-md-1" ng-controller="TestController as parking">
+				<rzslider rz-slider-model="parking.parkingSlider.value" rz-slider-options="parking.parkingSlider.options"></rzslider>
+					</div>
+  </form>
+        <br>
+     <form class="form-inline">
+					<div class="form-group"><label class = "col-md-12">Αποθήκη:</label>
+					</div>
+					<div class="custom-control custom-checkbox" >
+					<input type="checkbox" class="custom-control-input" id="customCheck7" >
+				<label class="custom-control-label" for="customCheck7"></label>
+					</div>
+  </form>
+       <form class="form-inline">				
+					<div class="form-group col-md-8 offset-md-1" ng-controller="TestController as warehouse">
+				<rzslider rz-slider-model="warehouse.warehouseSlider.value" rz-slider-options="warehouse.warehouseSlider.options"></rzslider>
+					</div>
+  </form>
+  </div>
+  </div>
+  <div class="modal-footer">
+	<div class="text-center">
+		<button class="btn btn-info" data-dismiss="modal" style=" border-color: #056571;background-color: #056571;">Αποθήκευση</button>
+	</div>
+	</div>
+  </div>
+  </div>
+  </div>
+
+	
+	
+	
+	
 
  
     </div>
@@ -593,26 +589,33 @@
 
     <!-- Contact form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
- 
+    <script src="js/contact_me.js"></script>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/agency.min.js"></script>
-	
-		<script src="js/chosen.jquery.min.js"></script>
-	<script src="js/chosen.proto.min.js"></script>
-	
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-    
+	
+    <script src="js/agency.min.js"></script>
 	<script src="js/chosen.jquery.min.js"></script>
 	<script src="js/chosen.proto.min.js"></script>
 
+	 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+
+	<script src="js/chosen.jquery.min.js"></script>
+	<script src="js/chosen.proto.min.js"></script>
 	<script src="js/favourite.js"></script>
+	
 	
 	<script>
 		
 		$(".chosen-select").chosen({
-  no_results_text: "Oops, nothing found!"
+  no_results_text: "Δεν υπάρχει αυτή η περιοχή"
 })
 	</script>
 	
@@ -639,7 +642,8 @@ function TestController() {
         maxValue: 500,
         options: {
             floor: 0,
-            ceil: 1500,
+            ceil: 1000,
+			step:5,
         }
     }
 	
@@ -648,88 +652,107 @@ function TestController() {
         maxValue: 80,
         options: {
             floor: 0,
-            ceil: 250,
+            ceil: 150,
+			step:5,
         }
     }
 	
 	bed.bedroomSlider = {
-		 value: 0,
-    options: {
-		floor: 0,
-        ceil: 5,
-        showSelectionBar: true
+		  value: 'Καθόλου σημαντικό',
+  options: {
+    stepsArray: 'Καθόλου σημαντικό \n Λίγο σημαντικό \n Μέτριο \n Σημαντικό \n Πολύ σημαντικό'.split('\n'), // equals to ['A', 'B', ... 'Z']
+	floor: 'Καθόλου σημαντικό',
+    ceil: 'Πολύ σημαντικό',
+    showSelectionBar: true,
+	showTicks: true
     }
 	}
 	
-	fl.importantSlider = {
-		 value: 0,
-    options: {
-		floor: 0,
-        ceil: 5,
-        showSelectionBar: true
+	fl.floorSlider = {
+		  value: 'Καθόλου σημαντικό',
+  options: {
+    stepsArray: 'Καθόλου σημαντικό \n Λίγο σημαντικό \n Μέτριο \n Σημαντικό \n Πολύ σημαντικό'.split('\n'), // equals to ['A', 'B', ... 'Z']
+	floor: 'Καθόλου σημαντικό',
+    ceil: 'Πολύ σημαντικό',
+    showSelectionBar: true,
+	showTicks: true
     }
 	}
 	
-	metro.importantSlider = {
-		 value: 0,
-    options: {
-		floor: 0,
-        ceil: 5,
-        showSelectionBar: true
+	metro.metroSlider = {
+		  value: 'Καθόλου σημαντικό',
+  options: {
+    stepsArray: 'Καθόλου σημαντικό \n Λίγο σημαντικό \n Μέτριο \n Σημαντικό \n Πολύ σημαντικό'.split('\n'), // equals to ['A', 'B', ... 'Z']
+	floor: 'Καθόλου σημαντικό',
+    ceil: 'Πολύ σημαντικό',
+    showSelectionBar: true,
+	showTicks: true
     }
 	}
 	
-	furn.importantSlider = {
-		 value: 0,
-    options: {
-		floor: 0,
-        ceil: 5,
-        showSelectionBar: true
+	furn.furnitureSlider = {
+		  value: 'Καθόλου σημαντικό',
+  options: {
+    stepsArray: 'Καθόλου σημαντικό \n Λίγο σημαντικό \n Μέτριο \n Σημαντικό \n Πολύ σημαντικό'.split('\n'), // equals to ['A', 'B', ... 'Z']
+	floor: 'Καθόλου σημαντικό',
+    ceil: 'Πολύ σημαντικό',
+    showSelectionBar: true,
+	showTicks: true
     }
 	}
 	
-	air.importantSlider = {
-		 value: 0,
-    options: {
-		floor: 0,
-        ceil: 5,
-        showSelectionBar: true
+	air.airSlider = {
+		  value: 'Καθόλου σημαντικό',
+  options: {
+    stepsArray: 'Καθόλου σημαντικό \n Λίγο σημαντικό \n Μέτριο \n Σημαντικό \n Πολύ σημαντικό'.split('\n'), // equals to ['A', 'B', ... 'Z']
+	floor: 'Καθόλου σημαντικό',
+    ceil: 'Πολύ σημαντικό',
+    showSelectionBar: true,
+	showTicks: true
     }
 	}
 	
-	hot.importantSlider = {
-		 value: 0,
-    options: {
-		floor: 0,
-        ceil: 5,
-        showSelectionBar: true
+	hot.hotSlider = {
+		  value: 'Καθόλου σημαντικό',
+  options: {
+    stepsArray: 'Καθόλου σημαντικό \n Λίγο σημαντικό \n Μέτριο \n Σημαντικό \n Πολύ σημαντικό'.split('\n'), // equals to ['A', 'B', ... 'Z']
+	floor: 'Καθόλου σημαντικό',
+    ceil: 'Πολύ σημαντικό',
+    showSelectionBar: true,
+	showTicks: true
     }
 	}
 	
-	nat.importantSlider = {
-		 value: 0,
-    options: {
-		floor: 0,
-        ceil: 5,
-        showSelectionBar: true
+	nat.natSlider = {
+		  value: 'Καθόλου σημαντικό',
+  options: {
+    stepsArray: 'Καθόλου σημαντικό \n Λίγο σημαντικό \n Μέτριο \n Σημαντικό \n Πολύ σημαντικό'.split('\n'), // equals to ['A', 'B', ... 'Z']
+	floor: 'Καθόλου σημαντικό',
+    ceil: 'Πολύ σημαντικό',
+    showSelectionBar: true,
+	showTicks: true
     }
 	}
 	
-	parking.importantSlider = {
-		 value: 0,
-    options: {
-		floor: 0,
-        ceil: 5,
-        showSelectionBar: true
+	parking.parkingSlider = {
+		  value: 'Καθόλου σημαντικό',
+  options: {
+    stepsArray: 'Καθόλου σημαντικό \n Λίγο σημαντικό \n Μέτριο \n Σημαντικό \n Πολύ σημαντικό'.split('\n'), // equals to ['A', 'B', ... 'Z']
+	floor: 'Καθόλου σημαντικό',
+    ceil: 'Πολύ σημαντικό',
+    showSelectionBar: true,
+	showTicks: true
     }
 	}
 	
-	warehouse.importantSlider = {
-		 value: 0,
-    options: {
-		floor: 0,
-        ceil: 5,
-        showSelectionBar: true
+	warehouse.warehouseSlider = {
+		  value: 'Καθόλου σημαντικό',
+  options: {
+    stepsArray: 'Καθόλου σημαντικό \n Λίγο σημαντικό \n Μέτριο \n Σημαντικό \n Πολύ σημαντικό'.split('\n'), // equals to ['A', 'B', ... 'Z']
+	floor: 'Καθόλου σημαντικό',
+    ceil: 'Πολύ σημαντικό',
+    showSelectionBar: true,
+	showTicks: true
     }
 	}
 }
