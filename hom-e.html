@@ -12,27 +12,27 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	
-	
+
+
 
     <!-- Custom fonts for this template -->
-	
-	    
+
+
 	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Lobster|Saira+Semi+Condensed" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=Caudex:700" rel="stylesheet"> 
-	
-	
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Caudex:700" rel="stylesheet">
+
+
 
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
-	
+
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -44,11 +44,11 @@
 	<link href="css/chosen.min.css" rel="stylesheet">
 
 
-	
+
 	<script src="https://rawgit.com/rzajac/angularjs-slider/master/dist/rzslider.js"></script>
 	<link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet"/>
 	<link href="css/rzslider.css" rel="stylesheet"/>
-	
+
 
 	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 
@@ -58,7 +58,7 @@
 	<script src="https://rawgit.com/rzajac/angularjs-slider/master/dist/rzslider.js"></script>
 	<link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet"/>
 	<link href="css/rzslider.css" rel="stylesheet"/>
-	
+
 	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -87,23 +87,19 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">Πώς λειτουργεί</a>
             </li>
-            
-            
+
 			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" data-target="#login"><b>Είσοδος</b></button></a>
-            </li>
-			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" data-target="#register"><b>Εγγραφή</b></button></a>
+              <a class="nav-link js-scroll-trigger" href="login.html"><b>Είσοδος/Εγγραφή</b></button></a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-	
-	
-	
+
+
+
     <!-- Header -->
-	
+
 	 <header class="masthead">
         <div class="intro-text container">
 		<div class="intro-heading" style="color:#08001a; margin-top:240px; font-family: 'Comfortaa', cursive;">Βρες το σπίτι που σου ταιριάζει!</div>
@@ -111,13 +107,13 @@
 			<div class="container" >
 				<form class="form-inline">
 					<div class="form-group col-lg-12 col-md-12 col-sm-12" style="width:100%">
-					
-					
-					
-					
+
+
+
+
 						<label><b>Περιοχή:  </b></label>
-						
-							<select data-placeholder="Πληκτρολόγησε την περιοχή που επιθυμείς" multiple class="chosen-select" name="test" >
+
+							<select data-placeholder="Πληκτρολόγησε την περιοχή που επιθυμείς" multiple class="chosen-select" name="test" style="width: 100%;">
 								<option value=""></option>
 								<optgroup label = "Αττική">
 								<option>Νομός Αττικής</option>
@@ -183,11 +179,11 @@
 		<option value="5">Gazi</option>
 		<option value="6">Tsalikaki</option>
 	</optgroup>
-    
+
 							</select>
 					</div>
 		<div class="col-lg-12 text-center"><p></p></div>
-		
+
 		<div class="form-group col-lg-6 col-md-8 col-sm-12" ng-controller="TestController as vm">
 			<label><b>Τιμή:  </b></label>
 			<rzslider rz-slider-model="vm.priceSlider.minValue" rz-slider-high="vm.priceSlider.maxValue" rz-slider-options="vm.priceSlider.options"></rzslider>
@@ -202,26 +198,26 @@
 			<a href="" data-toggle="modal" data-target="#communication"><i class="fa fa-filter" aria-hidden="false" style="color:#056571;"> <b style="color:#414141; font-size: 20px;">Φίλτρα</b></i></a>
 		</div>
 		<div class="col-lg-12 text-center"><p></p></div>
-		
+
 		<div class="col-lg-12 text-center">
-		
+
 
 			<a href="homes.html" class="btn btn-primary btn-lg" role="button" style=" border-color: #056571;background-color: #056571;"><b>Αναζήτηση</b></a>
-			
+
 		</div>
 	</form>
 	</div>
 	</div>
-    </div> 
-        
-      
+    </div>
+    </form>
+
     </header>
-	
-	
+
+
 		<!-- Message-->
 	<div class="modal fade" id="communication" role="dialog">
     <div class="modal-dialog modal-lg">
-	
+
 
       <!-- Modal content-->
 
@@ -242,11 +238,11 @@
 
 			<br>
 		</div>
-		
+
         <div class="modal-body container-fluid">
 		<div class="container" >
 			<form class="form-inline" action="/action_page.php">
-    <div class="form-group"><label class = "col-md-2">Υπνοδωμάτια:  </label> 
+    <div class="form-group"><label class = "col-md-2">Υπνοδωμάτια:  </label>
 					<input type="text" class="form-control col-md-2 offset-md-2" id="inputEmail4" placeholder="Από">
 					<input type="text" class="form-control col-md-2" id="inputEmail4" placeholder="Έως">
 					</div>
@@ -258,12 +254,12 @@
   </form>
   <br>
   <form class="form-inline" action="/action_page.php">
-    <div class="form-group"><label class = "col-md-2">Όροφος:  </label> 
+    <div class="form-group"><label class = "col-md-2">Όροφος:  </label>
 					<input type="text" class="form-control col-md-2 offset-md-2" id="inputEmail4" placeholder="Από">
 					<input type="text" class="form-control col-md-2" id="inputEmail4" placeholder="Έως">
 					</div>
   </form>
-  <form class="form-inline">				
+  <form class="form-inline">
 					<div class="form-group col-md-8 offset-md-1" ng-controller="TestController as fl">
 			<rzslider rz-slider-model="fl.floorSlider.value" rz-slider-options="fl.floorSlider.options"></rzslider>
 					</div>
@@ -277,7 +273,7 @@
 				        <label class="custom-control-label" for="customCheck1" ></label>
 					</div>
   </form>
-   <form class="form-inline">				
+   <form class="form-inline">
 					<div class="form-group col-md-8 offset-md-1"  ng-controller="TestController as metro">
 				<rzslider rz-slider-model="metro.metroSlider.value" rz-slider-options="metro.metroSlider.options"></rzslider>
 					</div>
@@ -291,7 +287,7 @@
 				        <label class="custom-control-label" for="customCheck2"></label>
 					</div>
   </form>
-     <form class="form-inline">				
+     <form class="form-inline">
 					<div class="form-group col-md-8 offset-md-1" ng-controller="TestController as furn">
 				<rzslider rz-slider-model="furn.furnitureSlider.value" rz-slider-options="furn.furnitureSlider.options"></rzslider>
 					</div>
@@ -305,7 +301,7 @@
 				        <label class="custom-control-label" for="customCheck3"></label>
 					</div>
   </form>
-       <form class="form-inline">				
+       <form class="form-inline">
 					<div class="form-group col-md-8 offset-md-1"  ng-controller="TestController as air">
 				<rzslider rz-slider-model="air.airSlider.value" rz-slider-options="air.airSlider.options"></rzslider>
 					</div>
@@ -319,7 +315,7 @@
 				<label class="custom-control-label" for="customCheck4"></label>
 					</div>
   </form>
-       <form class="form-inline">				
+       <form class="form-inline">
 					<div class="form-group col-md-8 offset-md-1"  ng-controller="TestController as hot">
 				<rzslider rz-slider-model="hot.hotSlider.value" rz-slider-options="hot.hotSlider.options"></rzslider>
 					</div>
@@ -333,7 +329,7 @@
 				<label class="custom-control-label" for="customCheck5"></label>
 					</div>
   </form>
-       <form class="form-inline">				
+       <form class="form-inline">
 					<div class="form-group col-md-8 offset-md-1" ng-controller="TestController as nat">
 				<rzslider rz-slider-model="nat.natSlider.value" rz-slider-options="nat.natSlider.options"></rzslider>
 					</div>
@@ -347,7 +343,7 @@
 				<label class="custom-control-label" for="customCheck6"></label>
 					</div>
   </form>
-       <form class="form-inline">				
+       <form class="form-inline">
 					<div class="form-group col-md-8 offset-md-1" ng-controller="TestController as parking">
 				<rzslider rz-slider-model="parking.parkingSlider.value" rz-slider-options="parking.parkingSlider.options"></rzslider>
 					</div>
@@ -361,7 +357,7 @@
 				<label class="custom-control-label" for="customCheck7"></label>
 					</div>
   </form>
-       <form class="form-inline">				
+       <form class="form-inline">
 					<div class="form-group col-md-8 offset-md-1" ng-controller="TestController as warehouse">
 				<rzslider rz-slider-model="warehouse.warehouseSlider.value" rz-slider-options="warehouse.warehouseSlider.options"></rzslider>
 					</div>
@@ -376,10 +372,10 @@
   </div>
   </div>
   </div>
- 
- 
-	
-   
+
+
+
+
 
     <!-- Providers -->
 	    <section id="providers">
@@ -517,7 +513,7 @@
               </li>
               <li class="timeline-inverted">
                 <div class="timeline-image">
-                  <h4>Επιτέλους 
+                  <h4>Επιτέλους
                     <br>το σπίτι των
                     <br>ονείρων σου!</h4>
                 </div>
@@ -530,10 +526,10 @@
 
 
 
-   
 
 
-    
+
+
 
     <!-- Footer -->
     <footer style="background:#14141F;">
@@ -542,13 +538,13 @@
           <div class="col-md-12 text-center">
             <span class="copyright" style="color:white;">Copyright &copy; Hom-e 2018</span>
           </div>
-          
-          
+
+
         </div>
       </div>
     </footer>
 
-	
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -559,14 +555,14 @@
     <!-- Contact form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
-	
+
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 
     <!-- Custom scripts for this template -->
 	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-	
+
     <script src="js/agency.min.js"></script>
 	<script src="js/chosen.jquery.min.js"></script>
 	<script src="js/chosen.proto.min.js"></script>
@@ -580,18 +576,18 @@
 	<script src="js/chosen.proto.min.js"></script>
 	<script src="js/favourite.js"></script>
 
-	
+
 	<script>
-		
+
 		$(".chosen-select").chosen({
   no_results_text: "Oops, nothing found!"
 })
 	</script>
-	
+
 		<script>
 		$('.your-checkbox').prop('indeterminate', true)
 	</script>
-	
+
 	<script>
 		var myApp = angular.module('myapp', ['rzModule']);
 
@@ -619,7 +615,7 @@ function TestController() {
 			step: 5,
         }
     }
-	
+
 	tm.embadonSlider = {
         minValue: 55,
         maxValue: 80,
@@ -629,7 +625,7 @@ function TestController() {
 			step: 5,
         }
     }
-	
+
 	bed.bedroomSlider = {
 		  value: 'Καθόλου σημαντικό',
   options: {
@@ -640,7 +636,7 @@ function TestController() {
 	showTicks: true
     }
 	}
-	
+
 	fl.floorSlider = {
 		  value: 'Καθόλου σημαντικό',
   options: {
@@ -651,7 +647,7 @@ function TestController() {
 	showTicks: true
     }
 	}
-	
+
 	metro.metroSlider = {
 		  value: 'Καθόλου σημαντικό',
   options: {
@@ -662,7 +658,7 @@ function TestController() {
 	showTicks: true
     }
 	}
-	
+
 	furn.furnitureSlider = {
 		  value: 'Καθόλου σημαντικό',
   options: {
@@ -673,7 +669,7 @@ function TestController() {
 	showTicks: true
     }
 	}
-	
+
 	air.airSlider = {
 		  value: 'Καθόλου σημαντικό',
   options: {
@@ -684,7 +680,7 @@ function TestController() {
 	showTicks: true
     }
 	}
-	
+
 	hot.hotSlider = {
 		  value: 'Καθόλου σημαντικό',
   options: {
@@ -695,7 +691,7 @@ function TestController() {
 	showTicks: true
     }
 	}
-	
+
 	nat.natSlider = {
 		  value: 'Καθόλου σημαντικό',
   options: {
@@ -706,7 +702,7 @@ function TestController() {
 	showTicks: true
     }
 	}
-	
+
 	parking.parkingSlider = {
 		  value: 'Καθόλου σημαντικό',
   options: {
@@ -717,7 +713,7 @@ function TestController() {
 	showTicks: true
     }
 	}
-	
+
 	warehouse.warehouseSlider = {
 		  value: 'Καθόλου σημαντικό',
   options: {
@@ -730,9 +726,9 @@ function TestController() {
 	}
 }
 	</script>
-	
 
-	
+
+
 
   </body>
 
