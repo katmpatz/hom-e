@@ -53,6 +53,8 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="hom-e.html#about">Πώς λειτουργεί</a>
             </li>
+
+
 			<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="login.html"><b>Είσοδος</b></button></a>
             </li>
@@ -77,9 +79,8 @@
 						<i class="fa fa-key fa-stack-1x fa-inverse"></i>
 					</span>
 				</div>
-				<h2 class="form-signin-heading text-center">Είσοδος</h2>
-				<h4 class="form-signin-heading text-center"><small>Συνδέσου στο hom-e συμπληρώνοντας απλά το e-mail σου και έναν κωδικό!</small></h4>
-				
+				<h2 class="form-signin-heading text-center">Εγγραφή</h2>
+				<h4 class="form-signin-heading text-center"><small>Δημιούργησε λογαριασμό στο hom-e συμπληρώνοντας απλά ένα username,το e-mail σου και έναν κωδικό!</small></h4>
 			
 		</div>
         <div class="container">
@@ -87,7 +88,12 @@
 			<hr>
           
 			<form name='form1' method='post' action='hom-e.html' class="form-horizontal">
-				
+				<div class="form-group row">
+                    <label for="email" class="col-sm-2 offset-sm-2 control-label" style="text-align:right"><b>Όνομα χρήστη:</b></label>
+					<div class="col-sm-5">
+						<input type="text" name="email" placeholder="Username" class="form-control" id="email">
+					</div>
+                </div>
 				<div class="form-group row">
                     <label for="email" class="col-sm-2 offset-sm-2 control-label" style="text-align:right"><b>Email:</b></label>
 					<div class="col-sm-5">
@@ -101,22 +107,23 @@
 					</div>
 					
                 </div> 
+				<div class="form-group row">
+                    <label for="password" class="col-sm-3 offset-sm-1 control-label" style="text-align:right"><b>Επιβεβαίωση κωδικού:</b></label>
+					<div class="col-sm-5">
+						<input type="password" name="password" placeholder="Password" class="form-control" id="password">
+					</div>
+					
+                </div> 
 
 				<br>
 				<br>
 				<div class="text-center">
-                    <button type="submit" class="btn btn-lg btn-primary " href="hom-e.html" ><b>Σύνδεση</b></button>
+                    <button type="submit" class="btn btn-lg btn-primary " href="hom-e.html" ><b>Δημιουργία λογαριασμού</b></button>
                 </div> 
             </form>  
 		
         </div>
         <br>
-
-		
-		<div class="text-center">
-			<h6>ή</h6> 
-			<a class="btn btn-link" href="register.html" role="button" style="color:blue;">Δημιουργία λογαριασμού</a>
-		</div>
 		
     </div>
 	  <br>
